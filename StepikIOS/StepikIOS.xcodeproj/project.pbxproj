@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
-		D0D324CD208DEDC90010E5A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* ViewController.swift */; };
+		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
 		D0D324D2208DEDCB0010E5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D324D1208DEDCB0010E5A2 /* Assets.xcassets */; };
 		D0D324D5208DEDCB0010E5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324D3208DEDCB0010E5A2 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,8 @@
 		D0D3254A208DF3050010E5A2 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32549208DF3050010E5A2 /* ReusableView.swift */; };
 		D0D3254C208DF31B0010E5A2 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3254B208DF31B0010E5A2 /* UITableView+.swift */; };
 		D0D3254E208DF32C0010E5A2 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3254D208DF32C0010E5A2 /* UITableViewCell+.swift */; };
+		D0D32553208DF6890010E5A2 /* Bookmarks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D32552208DF6890010E5A2 /* Bookmarks.storyboard */; };
+		D0D32555208DF6940010E5A2 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D32554208DF6940010E5A2 /* Search.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,7 @@
 /* Begin PBXFileReference section */
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0D324CC208DEDC90010E5A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D0D324CF208DEDC90010E5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0D324D1208DEDCB0010E5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0D324D4208DEDCB0010E5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		D0D32549208DF3050010E5A2 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		D0D3254B208DF31B0010E5A2 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		D0D3254D208DF32C0010E5A2 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		D0D32552208DF6890010E5A2 /* Bookmarks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmarks.storyboard; sourceTree = "<group>"; };
+		D0D32554208DF6940010E5A2 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +113,12 @@
 		D0D324C9208DEDC80010E5A2 /* StepikIOS */ = {
 			isa = PBXGroup;
 			children = (
-				D0D32540208DF19E0010E5A2 /* Commons */,
-				D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */,
-				D0D324CC208DEDC90010E5A2 /* ViewController.swift */,
-				D0D324CE208DEDC90010E5A2 /* Main.storyboard */,
-				D0D324D1208DEDCB0010E5A2 /* Assets.xcassets */,
-				D0D324D3208DEDCB0010E5A2 /* LaunchScreen.storyboard */,
 				D0D324D6208DEDCB0010E5A2 /* Info.plist */,
+				D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */,
+				D0D3254F208DF59B0010E5A2 /* Views */,
+				D0D32540208DF19E0010E5A2 /* Commons */,
+				D0D324D3208DEDCB0010E5A2 /* LaunchScreen.storyboard */,
+				D0D324D1208DEDCB0010E5A2 /* Assets.xcassets */,
 			);
 			path = StepikIOS;
 			sourceTree = "<group>";
@@ -141,6 +144,8 @@
 		D0D32540208DF19E0010E5A2 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				D0D324CC208DEDC90010E5A2 /* MainViewController.swift */,
+				D0D324CE208DEDC90010E5A2 /* Main.storyboard */,
 				D0D32542208DF1AE0010E5A2 /* Extensions */,
 				D0D32541208DF1AA0010E5A2 /* Utils */,
 			);
@@ -165,6 +170,31 @@
 				D0D32545208DF27E0010E5A2 /* Color+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0D3254F208DF59B0010E5A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32551208DF5B00010E5A2 /* Bookmarks */,
+				D0D32550208DF5A20010E5A2 /* Search */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0D32550208DF5A20010E5A2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32554208DF6940010E5A2 /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D0D32551208DF5B00010E5A2 /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32552208DF6890010E5A2 /* Bookmarks.storyboard */,
+			);
+			path = Bookmarks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +301,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D32553208DF6890010E5A2 /* Bookmarks.storyboard in Resources */,
 				D0D324D5208DEDCB0010E5A2 /* LaunchScreen.storyboard in Resources */,
 				D0D324D2208DEDCB0010E5A2 /* Assets.xcassets in Resources */,
 				D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */,
+				D0D32555208DF6940010E5A2 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +336,7 @@
 				D0D3254C208DF31B0010E5A2 /* UITableView+.swift in Sources */,
 				D0D3254A208DF3050010E5A2 /* ReusableView.swift in Sources */,
 				D0D3254E208DF32C0010E5A2 /* UITableViewCell+.swift in Sources */,
-				D0D324CD208DEDC90010E5A2 /* ViewController.swift in Sources */,
+				D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */,
 				D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
