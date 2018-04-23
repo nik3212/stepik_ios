@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
+		D0D324CD208DEDC90010E5A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* ViewController.swift */; };
+		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
+		D0D324D2208DEDCB0010E5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D324D1208DEDCB0010E5A2 /* Assets.xcassets */; };
+		D0D324D5208DEDCB0010E5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324D3208DEDCB0010E5A2 /* LaunchScreen.storyboard */; };
+		D0D324E0208DEDCB0010E5A2 /* StepikIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324DF208DEDCB0010E5A2 /* StepikIOSTests.swift */; };
+		D0D324EB208DEDCB0010E5A2 /* StepikIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324EA208DEDCB0010E5A2 /* StepikIOSUITests.swift */; };
+		D0D32544208DF1D00010E5A2 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32543208DF1D00010E5A2 /* UIImage+.swift */; };
+		D0D32546208DF27E0010E5A2 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32545208DF27E0010E5A2 /* Color+.swift */; };
+		D0D32548208DF2CE0010E5A2 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32547208DF2CE0010E5A2 /* NibLoadableView.swift */; };
+		D0D3254A208DF3050010E5A2 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32549208DF3050010E5A2 /* ReusableView.swift */; };
+		D0D3254C208DF31B0010E5A2 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3254B208DF31B0010E5A2 /* UITableView+.swift */; };
+		D0D3254E208DF32C0010E5A2 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3254D208DF32C0010E5A2 /* UITableViewCell+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0D324DC208DEDCB0010E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D324BF208DEDC80010E5A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D324C6208DEDC80010E5A2;
+			remoteInfo = StepikIOS;
+		};
+		D0D324E7208DEDCB0010E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D324BF208DEDC80010E5A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D324C6208DEDC80010E5A2;
+			remoteInfo = StepikIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0D324CC208DEDC90010E5A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0D324CF208DEDC90010E5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0D324D1208DEDCB0010E5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0D324D4208DEDCB0010E5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0D324D6208DEDCB0010E5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D324DB208DEDCB0010E5A2 /* StepikIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepikIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D324DF208DEDCB0010E5A2 /* StepikIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepikIOSTests.swift; sourceTree = "<group>"; };
+		D0D324E1208DEDCB0010E5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D324E6208DEDCB0010E5A2 /* StepikIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepikIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D324EA208DEDCB0010E5A2 /* StepikIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepikIOSUITests.swift; sourceTree = "<group>"; };
+		D0D324EC208DEDCB0010E5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D32543208DF1D00010E5A2 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		D0D32545208DF27E0010E5A2 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		D0D32547208DF2CE0010E5A2 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		D0D32549208DF3050010E5A2 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		D0D3254B208DF31B0010E5A2 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		D0D3254D208DF32C0010E5A2 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0D324C4208DEDC80010E5A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D324D8208DEDCB0010E5A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D324E3208DEDCB0010E5A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0D324BE208DEDC80010E5A2 = {
+			isa = PBXGroup;
+			children = (
+				D0D324C9208DEDC80010E5A2 /* StepikIOS */,
+				D0D324DE208DEDCB0010E5A2 /* StepikIOSTests */,
+				D0D324E9208DEDCB0010E5A2 /* StepikIOSUITests */,
+				D0D324C8208DEDC80010E5A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D324C8208DEDC80010E5A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0D324C7208DEDC80010E5A2 /* StepikIOS.app */,
+				D0D324DB208DEDCB0010E5A2 /* StepikIOSTests.xctest */,
+				D0D324E6208DEDCB0010E5A2 /* StepikIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0D324C9208DEDC80010E5A2 /* StepikIOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32540208DF19E0010E5A2 /* Commons */,
+				D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */,
+				D0D324CC208DEDC90010E5A2 /* ViewController.swift */,
+				D0D324CE208DEDC90010E5A2 /* Main.storyboard */,
+				D0D324D1208DEDCB0010E5A2 /* Assets.xcassets */,
+				D0D324D3208DEDCB0010E5A2 /* LaunchScreen.storyboard */,
+				D0D324D6208DEDCB0010E5A2 /* Info.plist */,
+			);
+			path = StepikIOS;
+			sourceTree = "<group>";
+		};
+		D0D324DE208DEDCB0010E5A2 /* StepikIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0D324DF208DEDCB0010E5A2 /* StepikIOSTests.swift */,
+				D0D324E1208DEDCB0010E5A2 /* Info.plist */,
+			);
+			path = StepikIOSTests;
+			sourceTree = "<group>";
+		};
+		D0D324E9208DEDCB0010E5A2 /* StepikIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0D324EA208DEDCB0010E5A2 /* StepikIOSUITests.swift */,
+				D0D324EC208DEDCB0010E5A2 /* Info.plist */,
+			);
+			path = StepikIOSUITests;
+			sourceTree = "<group>";
+		};
+		D0D32540208DF19E0010E5A2 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32542208DF1AE0010E5A2 /* Extensions */,
+				D0D32541208DF1AA0010E5A2 /* Utils */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		D0D32541208DF1AA0010E5A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32547208DF2CE0010E5A2 /* NibLoadableView.swift */,
+				D0D32549208DF3050010E5A2 /* ReusableView.swift */,
+				D0D3254B208DF31B0010E5A2 /* UITableView+.swift */,
+				D0D3254D208DF32C0010E5A2 /* UITableViewCell+.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D0D32542208DF1AE0010E5A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32543208DF1D00010E5A2 /* UIImage+.swift */,
+				D0D32545208DF27E0010E5A2 /* Color+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0D324C6208DEDC80010E5A2 /* StepikIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D324EF208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOS" */;
+			buildPhases = (
+				D0D324C3208DEDC80010E5A2 /* Sources */,
+				D0D324C4208DEDC80010E5A2 /* Frameworks */,
+				D0D324C5208DEDC80010E5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepikIOS;
+			productName = StepikIOS;
+			productReference = D0D324C7208DEDC80010E5A2 /* StepikIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0D324DA208DEDCB0010E5A2 /* StepikIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D324F2208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOSTests" */;
+			buildPhases = (
+				D0D324D7208DEDCB0010E5A2 /* Sources */,
+				D0D324D8208DEDCB0010E5A2 /* Frameworks */,
+				D0D324D9208DEDCB0010E5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0D324DD208DEDCB0010E5A2 /* PBXTargetDependency */,
+			);
+			name = StepikIOSTests;
+			productName = StepikIOSTests;
+			productReference = D0D324DB208DEDCB0010E5A2 /* StepikIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0D324E5208DEDCB0010E5A2 /* StepikIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D324F5208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOSUITests" */;
+			buildPhases = (
+				D0D324E2208DEDCB0010E5A2 /* Sources */,
+				D0D324E3208DEDCB0010E5A2 /* Frameworks */,
+				D0D324E4208DEDCB0010E5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0D324E8208DEDCB0010E5A2 /* PBXTargetDependency */,
+			);
+			name = StepikIOSUITests;
+			productName = StepikIOSUITests;
+			productReference = D0D324E6208DEDCB0010E5A2 /* StepikIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0D324BF208DEDC80010E5A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Никита Васильев";
+				TargetAttributes = {
+					D0D324C6208DEDC80010E5A2 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					D0D324DA208DEDCB0010E5A2 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D0D324C6208DEDC80010E5A2;
+					};
+					D0D324E5208DEDCB0010E5A2 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D0D324C6208DEDC80010E5A2;
+					};
+				};
+			};
+			buildConfigurationList = D0D324C2208DEDC80010E5A2 /* Build configuration list for PBXProject "StepikIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0D324BE208DEDC80010E5A2;
+			productRefGroup = D0D324C8208DEDC80010E5A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0D324C6208DEDC80010E5A2 /* StepikIOS */,
+				D0D324DA208DEDCB0010E5A2 /* StepikIOSTests */,
+				D0D324E5208DEDCB0010E5A2 /* StepikIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0D324C5208DEDC80010E5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D324D5208DEDCB0010E5A2 /* LaunchScreen.storyboard in Resources */,
+				D0D324D2208DEDCB0010E5A2 /* Assets.xcassets in Resources */,
+				D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D324D9208DEDCB0010E5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D324E4208DEDCB0010E5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0D324C3208DEDC80010E5A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D32544208DF1D00010E5A2 /* UIImage+.swift in Sources */,
+				D0D32548208DF2CE0010E5A2 /* NibLoadableView.swift in Sources */,
+				D0D32546208DF27E0010E5A2 /* Color+.swift in Sources */,
+				D0D3254C208DF31B0010E5A2 /* UITableView+.swift in Sources */,
+				D0D3254A208DF3050010E5A2 /* ReusableView.swift in Sources */,
+				D0D3254E208DF32C0010E5A2 /* UITableViewCell+.swift in Sources */,
+				D0D324CD208DEDC90010E5A2 /* ViewController.swift in Sources */,
+				D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D324D7208DEDCB0010E5A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D324E0208DEDCB0010E5A2 /* StepikIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D324E2208DEDCB0010E5A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D324EB208DEDCB0010E5A2 /* StepikIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0D324DD208DEDCB0010E5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0D324C6208DEDC80010E5A2 /* StepikIOS */;
+			targetProxy = D0D324DC208DEDCB0010E5A2 /* PBXContainerItemProxy */;
+		};
+		D0D324E8208DEDCB0010E5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0D324C6208DEDC80010E5A2 /* StepikIOS */;
+			targetProxy = D0D324E7208DEDCB0010E5A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0D324CE208DEDC90010E5A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D324CF208DEDC90010E5A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D324D3208DEDCB0010E5A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D324D4208DEDCB0010E5A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0D324ED208DEDCB0010E5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0D324EE208DEDCB0010E5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0D324F0208DEDCB0010E5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = StepikIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0D324F1208DEDCB0010E5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = StepikIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0D324F3208DEDCB0010E5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = StepikIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepikIOS.app/StepikIOS";
+			};
+			name = Debug;
+		};
+		D0D324F4208DEDCB0010E5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = StepikIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepikIOS.app/StepikIOS";
+			};
+			name = Release;
+		};
+		D0D324F6208DEDCB0010E5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = StepikIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StepikIOS;
+			};
+			name = Debug;
+		};
+		D0D324F7208DEDCB0010E5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = StepikIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StepikIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0D324C2208DEDC80010E5A2 /* Build configuration list for PBXProject "StepikIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D324ED208DEDCB0010E5A2 /* Debug */,
+				D0D324EE208DEDCB0010E5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D324EF208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D324F0208DEDCB0010E5A2 /* Debug */,
+				D0D324F1208DEDCB0010E5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D324F2208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D324F3208DEDCB0010E5A2 /* Debug */,
+				D0D324F4208DEDCB0010E5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D324F5208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D324F6208DEDCB0010E5A2 /* Debug */,
+				D0D324F7208DEDCB0010E5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0D324BF208DEDC80010E5A2 /* Project object */;
+}
