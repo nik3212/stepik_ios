@@ -22,6 +22,17 @@
 		D0D3254E208DF32C0010E5A2 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3254D208DF32C0010E5A2 /* UITableViewCell+.swift */; };
 		D0D32553208DF6890010E5A2 /* Bookmarks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D32552208DF6890010E5A2 /* Bookmarks.storyboard */; };
 		D0D32555208DF6940010E5A2 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D32554208DF6940010E5A2 /* Search.storyboard */; };
+		D0D3256B208E0B130010E5A2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3256A208E0B130010E5A2 /* SearchViewController.swift */; };
+		D0D3256F208E0B790010E5A2 /* SearchCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3256E208E0B790010E5A2 /* SearchCellModel.swift */; };
+		D0D32571208E0B940010E5A2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32570208E0B940010E5A2 /* SearchTableViewCell.swift */; };
+		D0D32573208E0C830010E5A2 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D32572208E0C830010E5A2 /* SearchTableViewCell.xib */; };
+		D0D32575208E0FD50010E5A2 /* SearchViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32574208E0FD50010E5A2 /* SearchViewOutput.swift */; };
+		D0D32577208E10100010E5A2 /* SearcgViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32576208E10100010E5A2 /* SearcgViewInput.swift */; };
+		D0D32579208E10470010E5A2 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32578208E10470010E5A2 /* SearchPresenter.swift */; };
+		D0D3257B208E10980010E5A2 /* SearchViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3257A208E10980010E5A2 /* SearchViewConfigurator.swift */; };
+		D0D3257D208E12710010E5A2 /* SearchViewControllerInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3257C208E12710010E5A2 /* SearchViewControllerInitializer.swift */; };
+		D0D3257F208E13650010E5A2 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3257E208E13650010E5A2 /* DrawerViewController.swift */; };
+		D0D32581208E14490010E5A2 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32580208E14490010E5A2 /* ViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +52,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D0B5624D208E28080066578C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D0B56257208E29DE0066578C /* ExternalWorkers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalWorkers.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Debug-iphoneos/ExternalWorkers.framework"; sourceTree = "<group>"; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +88,17 @@
 		D0D3254D208DF32C0010E5A2 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		D0D32552208DF6890010E5A2 /* Bookmarks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmarks.storyboard; sourceTree = "<group>"; };
 		D0D32554208DF6940010E5A2 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		D0D3256A208E0B130010E5A2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D0D3256E208E0B790010E5A2 /* SearchCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellModel.swift; sourceTree = "<group>"; };
+		D0D32570208E0B940010E5A2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		D0D32572208E0C830010E5A2 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		D0D32574208E0FD50010E5A2 /* SearchViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewOutput.swift; sourceTree = "<group>"; };
+		D0D32576208E10100010E5A2 /* SearcgViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearcgViewInput.swift; sourceTree = "<group>"; };
+		D0D32578208E10470010E5A2 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		D0D3257A208E10980010E5A2 /* SearchViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewConfigurator.swift; sourceTree = "<group>"; };
+		D0D3257C208E12710010E5A2 /* SearchViewControllerInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerInitializer.swift; sourceTree = "<group>"; };
+		D0D3257E208E13650010E5A2 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		D0D32580208E14490010E5A2 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +126,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0B56256208E29D60066578C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B56257208E29DE0066578C /* ExternalWorkers.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0D324BE208DEDC80010E5A2 = {
 			isa = PBXGroup;
 			children = (
+				D0B56256208E29D60066578C /* Frameworks */,
 				D0D324C9208DEDC80010E5A2 /* StepikIOS */,
 				D0D324DE208DEDCB0010E5A2 /* StepikIOSTests */,
 				D0D324E9208DEDCB0010E5A2 /* StepikIOSUITests */,
@@ -145,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D324CC208DEDC90010E5A2 /* MainViewController.swift */,
+				D0D3257E208E13650010E5A2 /* DrawerViewController.swift */,
 				D0D324CE208DEDC90010E5A2 /* Main.storyboard */,
 				D0D32542208DF1AE0010E5A2 /* Extensions */,
 				D0D32541208DF1AA0010E5A2 /* Utils */,
@@ -159,6 +205,7 @@
 				D0D32549208DF3050010E5A2 /* ReusableView.swift */,
 				D0D3254B208DF31B0010E5A2 /* UITableView+.swift */,
 				D0D3254D208DF32C0010E5A2 /* UITableViewCell+.swift */,
+				D0D32580208E14490010E5A2 /* ViewControllerFactory.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -184,6 +231,9 @@
 		D0D32550208DF5A20010E5A2 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				D0D32566208E097D0010E5A2 /* Configurator */,
+				D0D32569208E09FE0010E5A2 /* Presenter */,
+				D0D32568208E09F80010E5A2 /* View */,
 				D0D32554208DF6940010E5A2 /* Search.storyboard */,
 			);
 			path = Search;
@@ -197,6 +247,52 @@
 			path = Bookmarks;
 			sourceTree = "<group>";
 		};
+		D0D32566208E097D0010E5A2 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				D0D3257A208E10980010E5A2 /* SearchViewConfigurator.swift */,
+				D0D3257C208E12710010E5A2 /* SearchViewControllerInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		D0D32568208E09F80010E5A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0D3256D208E0B5A0010E5A2 /* Cell */,
+				D0D3256C208E0B550010E5A2 /* Protocols */,
+				D0D3256A208E0B130010E5A2 /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0D32569208E09FE0010E5A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32578208E10470010E5A2 /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D0D3256C208E0B550010E5A2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32574208E0FD50010E5A2 /* SearchViewOutput.swift */,
+				D0D32576208E10100010E5A2 /* SearcgViewInput.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D0D3256D208E0B5A0010E5A2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32572208E0C830010E5A2 /* SearchTableViewCell.xib */,
+				D0D3256E208E0B790010E5A2 /* SearchCellModel.swift */,
+				D0D32570208E0B940010E5A2 /* SearchTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,6 +303,7 @@
 				D0D324C3208DEDC80010E5A2 /* Sources */,
 				D0D324C4208DEDC80010E5A2 /* Frameworks */,
 				D0D324C5208DEDC80010E5A2 /* Resources */,
+				D0B5624D208E28080066578C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,6 +403,7 @@
 				D0D324D2208DEDCB0010E5A2 /* Assets.xcassets in Resources */,
 				D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */,
 				D0D32555208DF6940010E5A2 /* Search.storyboard in Resources */,
+				D0D32573208E0C830010E5A2 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,11 +431,21 @@
 				D0D32544208DF1D00010E5A2 /* UIImage+.swift in Sources */,
 				D0D32548208DF2CE0010E5A2 /* NibLoadableView.swift in Sources */,
 				D0D32546208DF27E0010E5A2 /* Color+.swift in Sources */,
+				D0D32581208E14490010E5A2 /* ViewControllerFactory.swift in Sources */,
+				D0D32579208E10470010E5A2 /* SearchPresenter.swift in Sources */,
+				D0D3257B208E10980010E5A2 /* SearchViewConfigurator.swift in Sources */,
+				D0D3256B208E0B130010E5A2 /* SearchViewController.swift in Sources */,
+				D0D32571208E0B940010E5A2 /* SearchTableViewCell.swift in Sources */,
 				D0D3254C208DF31B0010E5A2 /* UITableView+.swift in Sources */,
 				D0D3254A208DF3050010E5A2 /* ReusableView.swift in Sources */,
+				D0D3257D208E12710010E5A2 /* SearchViewControllerInitializer.swift in Sources */,
 				D0D3254E208DF32C0010E5A2 /* UITableViewCell+.swift in Sources */,
 				D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */,
 				D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */,
+				D0D3257F208E13650010E5A2 /* DrawerViewController.swift in Sources */,
+				D0D3256F208E0B790010E5A2 /* SearchCellModel.swift in Sources */,
+				D0D32575208E0FD50010E5A2 /* SearchViewOutput.swift in Sources */,
+				D0D32577208E10100010E5A2 /* SearcgViewInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
