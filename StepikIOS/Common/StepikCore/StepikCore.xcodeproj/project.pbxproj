@@ -10,6 +10,7 @@
 		D0D3250C208DEEB90010E5A2 /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D32502208DEEB90010E5A2 /* StepikCore.framework */; };
 		D0D32511208DEEB90010E5A2 /* StepikCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32510208DEEB90010E5A2 /* StepikCoreTests.swift */; };
 		D0D32513208DEEB90010E5A2 /* StepikCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D32505208DEEB90010E5A2 /* StepikCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0D32558208E02710010E5A2 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32557208E02710010E5A2 /* SearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D0D3250B208DEEB90010E5A2 /* StepikCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepikCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D32510208DEEB90010E5A2 /* StepikCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepikCoreTests.swift; sourceTree = "<group>"; };
 		D0D32512208DEEB90010E5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D32557208E02710010E5A2 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D32505208DEEB90010E5A2 /* StepikCore.h */,
+				D0D32556208E025D0010E5A2 /* Search */,
 				D0D32506208DEEB90010E5A2 /* Info.plist */,
 			);
 			path = StepikCore;
@@ -84,6 +87,14 @@
 				D0D32512208DEEB90010E5A2 /* Info.plist */,
 			);
 			path = StepikCoreTests;
+			sourceTree = "<group>";
+		};
+		D0D32556208E025D0010E5A2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D0D32557208E02710010E5A2 /* SearchResponse.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					D0D32501208DEEB90010E5A2 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					D0D3250A208DEEB90010E5A2 = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D32558208E02710010E5A2 /* SearchResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +352,7 @@
 		D0D32517208DEEB90010E5A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +380,7 @@
 		D0D32518208DEEB90010E5A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +407,7 @@
 		D0D3251A208DEEB90010E5A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
 				INFOPLIST_FILE = StepikCoreTests/Info.plist;
@@ -409,6 +426,7 @@
 		D0D3251B208DEEB90010E5A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
 				INFOPLIST_FILE = StepikCoreTests/Info.plist;
