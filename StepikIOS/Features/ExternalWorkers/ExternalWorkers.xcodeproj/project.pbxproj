@@ -11,9 +11,7 @@
 		D01630E3208E388000839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630E2208E388000839D2E /* StepikCore.framework */; };
 		D01630E6208E394300839D2E /* Pods_ExternalWorkers.framework in Resources */ = {isa = PBXBuildFile; fileRef = D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */; };
 		D01630E7208E394300839D2E /* StepikCore.framework in Resources */ = {isa = PBXBuildFile; fileRef = D01630E2208E388000839D2E /* StepikCore.framework */; };
-		D02F9D322090B5BF006BA167 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02F9D312090B5BF006BA167 /* Alamofire.framework */; };
-		D02F9D332090B5C8006BA167 /* Alamofire.framework in Resources */ = {isa = PBXBuildFile; fileRef = D02F9D312090B5BF006BA167 /* Alamofire.framework */; };
-		D02F9D342090B5D0006BA167 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D02F9D312090B5BF006BA167 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D02F9D7020910DC3006BA167 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D02F9D6820910BCB006BA167 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D32530208DEEE10010E5A2 /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D32526208DEEE10010E5A2 /* ExternalWorkers.framework */; };
 		D0D32535208DEEE20010E5A2 /* ExternalWorkersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32534208DEEE20010E5A2 /* ExternalWorkersTests.swift */; };
 		D0D32537208DEEE20010E5A2 /* ExternalWorkers.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D32529208DEEE10010E5A2 /* ExternalWorkers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,13 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D02F9D302090B59C006BA167 /* CopyFiles */ = {
+		D02F9D6E20910C78006BA167 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D02F9D342090B5D0006BA167 /* Alamofire.framework in CopyFiles */,
+				D02F9D7020910DC3006BA167 /* Alamofire.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +51,7 @@
 		CC578C27B8F90C2253616C9B /* Pods_ExternalWorkersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExternalWorkersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01630E2208E388000839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D02F9D312090B5BF006BA167 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "../Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02F9D6820910BCB006BA167 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		D0D32526208DEEE10010E5A2 /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D32529208DEEE10010E5A2 /* ExternalWorkers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalWorkers.h; sourceTree = "<group>"; };
 		D0D3252A208DEEE10010E5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D02F9D322090B5BF006BA167 /* Alamofire.framework in Frameworks */,
 				D01630E1208E388000839D2E /* Pods_ExternalWorkers.framework in Frameworks */,
 				D01630E3208E388000839D2E /* StepikCore.framework in Frameworks */,
 			);
@@ -160,7 +157,7 @@
 		D14F796A5BE2F0EC9ADF9DB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D02F9D312090B5BF006BA167 /* Alamofire.framework */,
+				D02F9D6820910BCB006BA167 /* Alamofire.framework */,
 				D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */,
 				D01630E2208E388000839D2E /* StepikCore.framework */,
 				CC578C27B8F90C2253616C9B /* Pods_ExternalWorkersTests.framework */,
@@ -186,12 +183,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0D3253A208DEEE20010E5A2 /* Build configuration list for PBXNativeTarget "ExternalWorkers" */;
 			buildPhases = (
-				9EB757430135EF027B0B42B3 /* [CP] Check Pods Manifest.lock */,
+				A22F98ADC38419151144F806 /* [CP] Check Pods Manifest.lock */,
 				D0D32521208DEEE10010E5A2 /* Sources */,
 				D0D32522208DEEE10010E5A2 /* Frameworks */,
 				D0D32523208DEEE10010E5A2 /* Headers */,
 				D0D32524208DEEE10010E5A2 /* Resources */,
-				D02F9D302090B59C006BA167 /* CopyFiles */,
+				D02F9D6D20910C72006BA167 /* ShellScript */,
+				D02F9D6E20910C78006BA167 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -210,7 +208,7 @@
 				D0D3252B208DEEE10010E5A2 /* Sources */,
 				D0D3252C208DEEE10010E5A2 /* Frameworks */,
 				D0D3252D208DEEE10010E5A2 /* Resources */,
-				E538C3DF5DC21E9B23E13130 /* [CP] Embed Pods Frameworks */,
+				CA89CB7B6DF35813DE2B87F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,7 +262,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D02F9D332090B5C8006BA167 /* Alamofire.framework in Resources */,
 				D01630E7208E394300839D2E /* StepikCore.framework in Resources */,
 				D01630E6208E394300839D2E /* Pods_ExternalWorkers.framework in Resources */,
 			);
@@ -280,7 +277,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9EB757430135EF027B0B42B3 /* [CP] Check Pods Manifest.lock */ = {
+		A22F98ADC38419151144F806 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,7 +313,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E538C3DF5DC21E9B23E13130 /* [CP] Embed Pods Frameworks */ = {
+		CA89CB7B6DF35813DE2B87F9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,6 +330,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-ExternalWorkersTests/Pods-ExternalWorkersTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D02F9D6D20910C72006BA167 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -498,6 +508,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ExternalWorkers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -527,6 +541,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ExternalWorkers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

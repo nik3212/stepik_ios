@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */; };
 		D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; };
 		D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D02F9D2F2090B589006BA167 /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DC208E338800839D2E /* ExternalWorkers.framework */; };
-		D02F9D352090B726006BA167 /* ExternalWorkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DC208E338800839D2E /* ExternalWorkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D085C887209111EA00A7F2DE /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D085C8832091104900A7F2DE /* ExternalWorkers.framework */; };
+		D085C888209111EA00A7F2DE /* ExternalWorkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D085C8832091104900A7F2DE /* ExternalWorkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -63,8 +64,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D02F9D352090B726006BA167 /* ExternalWorkers.framework in Embed Frameworks */,
 				D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */,
+				D085C888209111EA00A7F2DE /* ExternalWorkers.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,8 +73,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D01630DC208E338800839D2E /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B580C23E243BE27E8E00AF /* Pods-StepikIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepikIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5611CC105BD7AA69D2CB685D /* Pods-StepikIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepikIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS.release.xcconfig"; sourceTree = "<group>"; };
+		5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepikIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01630DE208E360200839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D085C8832091104900A7F2DE /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D085C8892091122300A7F2DE /* ExternalWorkers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalWorkers.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphoneos/ExternalWorkers.framework"; sourceTree = "<group>"; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -113,8 +118,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D085C887209111EA00A7F2DE /* ExternalWorkers.framework in Frameworks */,
 				D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */,
-				D02F9D2F2090B589006BA167 /* ExternalWorkers.framework in Frameworks */,
+				278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,11 +141,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FF3F9795E30C71CD9036DAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40B580C23E243BE27E8E00AF /* Pods-StepikIOS.debug.xcconfig */,
+				5611CC105BD7AA69D2CB685D /* Pods-StepikIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D0B56256208E29D60066578C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D085C8892091122300A7F2DE /* ExternalWorkers.framework */,
 				D01630DE208E360200839D2E /* StepikCore.framework */,
-				D01630DC208E338800839D2E /* ExternalWorkers.framework */,
+				5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -147,11 +163,13 @@
 		D0D324BE208DEDC80010E5A2 = {
 			isa = PBXGroup;
 			children = (
+				D085C8832091104900A7F2DE /* ExternalWorkers.framework */,
 				D0B56256208E29D60066578C /* Frameworks */,
 				D0D324C9208DEDC80010E5A2 /* StepikIOS */,
 				D0D324DE208DEDCB0010E5A2 /* StepikIOSTests */,
 				D0D324E9208DEDCB0010E5A2 /* StepikIOSUITests */,
 				D0D324C8208DEDC80010E5A2 /* Products */,
+				6FF3F9795E30C71CD9036DAF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -310,10 +328,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0D324EF208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOS" */;
 			buildPhases = (
+				39D1364A96DB2162885E270F /* [CP] Check Pods Manifest.lock */,
 				D0D324C3208DEDC80010E5A2 /* Sources */,
 				D0D324C4208DEDC80010E5A2 /* Frameworks */,
 				D0D324C5208DEDC80010E5A2 /* Resources */,
 				D0B5624D208E28080066578C /* Embed Frameworks */,
+				BD21563874630C0573B72FBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -433,6 +453,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39D1364A96DB2162885E270F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StepikIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD21563874630C0573B72FBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0D324C3208DEDC80010E5A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -510,66 +569,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D0D324ED208DEDCB0010E5A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
 		D0D324EE208DEDCB0010E5A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -624,36 +623,19 @@
 			};
 			name = Release;
 		};
-		D0D324F0208DEDCB0010E5A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A8WE5LL2GU;
-				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = StepikIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		D0D324F1208DEDCB0010E5A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5611CC105BD7AA69D2CB685D /* Pods-StepikIOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Features/ExternalWorkers",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = StepikIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,27 +649,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
-		};
-		D0D324F3208DEDCB0010E5A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A8WE5LL2GU;
-				INFOPLIST_FILE = StepikIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepikIOS.app/StepikIOS";
-			};
-			name = Debug;
 		};
 		D0D324F4208DEDCB0010E5A2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -709,26 +670,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepikIOS.app/StepikIOS";
 			};
 			name = Release;
-		};
-		D0D324F6208DEDCB0010E5A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A8WE5LL2GU;
-				INFOPLIST_FILE = StepikIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StepikIOS;
-			};
-			name = Debug;
 		};
 		D0D324F7208DEDCB0010E5A2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -756,7 +697,6 @@
 		D0D324C2208DEDC80010E5A2 /* Build configuration list for PBXProject "StepikIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0D324ED208DEDCB0010E5A2 /* Debug */,
 				D0D324EE208DEDCB0010E5A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -765,7 +705,6 @@
 		D0D324EF208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0D324F0208DEDCB0010E5A2 /* Debug */,
 				D0D324F1208DEDCB0010E5A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -774,7 +713,6 @@
 		D0D324F2208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0D324F3208DEDCB0010E5A2 /* Debug */,
 				D0D324F4208DEDCB0010E5A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -783,7 +721,6 @@
 		D0D324F5208DEDCB0010E5A2 /* Build configuration list for PBXNativeTarget "StepikIOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0D324F6208DEDCB0010E5A2 /* Debug */,
 				D0D324F7208DEDCB0010E5A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

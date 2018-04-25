@@ -4,11 +4,17 @@ use_frameworks!
 
 workspace 'StepikIOS'
 
+xcodeproj 'StepikIOS.xcodeproj'
 xcodeproj 'Common/StepikCore/StepikCore.xcodeproj'
 xcodeproj 'Features/ExternalWorkers/ExternalWorkers.xcodeproj'
 
 def net_pods
     pod 'Alamofire', '~> 4.7.2'
+end
+
+target :StepikIOS do
+   xcodeproj 'StepikIOS.xcodeproj'
+   net_pods 
 end
 
 target :ExternalWorkers do
