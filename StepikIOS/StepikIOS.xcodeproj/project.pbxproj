@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; };
+		D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D02F9D2F2090B589006BA167 /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DC208E338800839D2E /* ExternalWorkers.framework */; };
+		D02F9D352090B726006BA167 /* ExternalWorkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DC208E338800839D2E /* ExternalWorkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -59,6 +63,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D02F9D352090B726006BA167 /* ExternalWorkers.framework in Embed Frameworks */,
+				D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D0B56257208E29DE0066578C /* ExternalWorkers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalWorkers.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Debug-iphoneos/ExternalWorkers.framework"; sourceTree = "<group>"; };
+		D01630DC208E338800839D2E /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01630DE208E360200839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */,
+				D02F9D2F2090B589006BA167 /* ExternalWorkers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +138,8 @@
 		D0B56256208E29D60066578C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0B56257208E29DE0066578C /* ExternalWorkers.framework */,
+				D01630DE208E360200839D2E /* StepikCore.framework */,
+				D01630DC208E338800839D2E /* ExternalWorkers.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -617,15 +627,18 @@
 		D0D324F0208DEDCB0010E5A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = StepikIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -636,15 +649,18 @@
 		D0D324F1208DEDCB0010E5A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = StepikIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.StepikIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -12,7 +12,7 @@ class SearchViewConfigurator {
         
         presenter.view = viewController
         
-        let viewModel = SearchCellModel()
+        let viewModel = SearchCellModel(nil)
         
         viewController.output = presenter
         viewController.viewModel = viewModel

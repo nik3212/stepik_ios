@@ -17,8 +17,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet var contentView: UIView!
     @IBOutlet var tabBar: UITabBar!
-    @IBOutlet var navigationBar: UINavigationBar!
-    
+
     private var currentScreen: ScreenType = .search
     private var currentContentViewController: UIViewController?
     

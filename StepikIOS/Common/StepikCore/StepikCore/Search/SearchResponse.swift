@@ -1,6 +1,6 @@
 import Foundation
 
-public struct SearchResponse {
+public struct Course {
     public let id: Int
     public let position: Int
     public let score: Int
@@ -13,8 +13,8 @@ public struct SearchResponse {
     public let courseCover: String
 }
 
-extension SearchResponse: Decodable {
-    enum SearchResponseKeys: String, CodingKey {
+extension Course: Decodable {
+    enum CourseKeys: String, CodingKey {
         case id = "id"
         case position = "position"
         case score = "score"
@@ -28,7 +28,7 @@ extension SearchResponse: Decodable {
     }
     
     public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: SearchResponseKeys.self)
+        let container = try decoder.container(keyedBy: CourseKeys.self)
         let id: Int = try container.decode(Int.self, forKey: .id)
         let position: Int = try container.decode(Int.self, forKey: .position)
         let score: Int = try container.decode(Int.self, forKey: .score)

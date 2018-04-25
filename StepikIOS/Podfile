@@ -11,13 +11,13 @@ def net_pods
     pod 'Alamofire', '~> 4.7.2'
 end
 
-target 'ExternalWorkers' do
+target :ExternalWorkers do
 	xcodeproj 'Features/ExternalWorkers/ExternalWorkers.xcodeproj'
     net_pods
 end
 
-target 'ExternalWorkersTests' do
-	xcodeproj 'Features/ExternalWorkers/ExternalWorkers.xcodeproj'
+target :ExternalWorkersTests do
+    xcodeproj 'Features/ExternalWorkers/ExternalWorkers.xcodeproj'
     net_pods
 end
 

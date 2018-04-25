@@ -11,10 +11,16 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.register(SearchTableViewCell.self)
+        
+        output.prepareData()
     }
 }
 
 extension SearchViewController: SearchViewInput {
+    func setupView(viewModel: SearchCellModel) {
+        self.viewModel = viewModel
+    }
+    
     func reloadData() {
         tableView.reloadData()
     }
