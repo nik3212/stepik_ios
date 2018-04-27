@@ -1,7 +1,7 @@
 import StepikCore
 
 public protocol CourseLoaderProtocol {
-    func loadCourses(_ completion: @escaping (Result<[Course]>)->())
+    func loadCourses(_ completion: @escaping (Result<PagedCourses>)->())
 }
 
 import Alamofire
@@ -16,10 +16,10 @@ public class CourseLoader: CourseLoaderProtocol {
     
     public init() {}
     
-    public func loadCourses(_ completion: @escaping (Result<[Course]>)->()) {
+    public func loadCourses(_ completion: @escaping (Result<PagedCourses>)->()) {
         courseRequest.response(queue: nil) { (response) in
             if let data = response.data,
-                let courses = try? JSONDecoder().decode([Course].self, from: data) {
+                let courses = try? JSONDecoder().decode(PagedCourses.self, from: data) {
                 completion(.Success(courses))
             } else {
                 completion(.Error)

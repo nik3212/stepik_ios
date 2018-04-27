@@ -10,6 +10,7 @@ class SearchPresenter: SearchViewOutput {
             case .Success(let courses):
                 let viewModel = SearchCellModel(courses)
                 self.view.setupView(viewModel: viewModel)
+                self.view.reloadData()
             case .Error:
                 break
             }

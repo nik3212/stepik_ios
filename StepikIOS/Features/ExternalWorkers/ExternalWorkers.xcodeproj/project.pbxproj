@@ -11,13 +11,13 @@
 		D01630E3208E388000839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630E2208E388000839D2E /* StepikCore.framework */; };
 		D01630E6208E394300839D2E /* Pods_ExternalWorkers.framework in Resources */ = {isa = PBXBuildFile; fileRef = D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */; };
 		D01630E7208E394300839D2E /* StepikCore.framework in Resources */ = {isa = PBXBuildFile; fileRef = D01630E2208E388000839D2E /* StepikCore.framework */; };
-		D02F9D7020910DC3006BA167 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D02F9D6820910BCB006BA167 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D32530208DEEE10010E5A2 /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D32526208DEEE10010E5A2 /* ExternalWorkers.framework */; };
 		D0D32535208DEEE20010E5A2 /* ExternalWorkersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32534208DEEE20010E5A2 /* ExternalWorkersTests.swift */; };
 		D0D32537208DEEE20010E5A2 /* ExternalWorkers.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D32529208DEEE10010E5A2 /* ExternalWorkers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0D3255F208E058E0010E5A2 /* CourseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3255E208E058E0010E5A2 /* CourseLoader.swift */; };
 		D0D32562208E06020010E5A2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32561208E06020010E5A2 /* Result.swift */; };
 		D0D32564208E06390010E5A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32563208E06390010E5A2 /* Constants.swift */; };
+		D0EA8B1F20923F02006AD21F /* CourseLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EA8B1E20923F02006AD21F /* CourseLoaderTests.swift */; };
 		FCF72B334C286C91E6C79CDA /* Pods_ExternalWorkersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC578C27B8F90C2253616C9B /* Pods_ExternalWorkersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D02F9D7020910DC3006BA167 /* Alamofire.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +50,6 @@
 		CC578C27B8F90C2253616C9B /* Pods_ExternalWorkersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExternalWorkersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01630E2208E388000839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D02F9D6820910BCB006BA167 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		D0D32526208DEEE10010E5A2 /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D32529208DEEE10010E5A2 /* ExternalWorkers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalWorkers.h; sourceTree = "<group>"; };
 		D0D3252A208DEEE10010E5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +59,7 @@
 		D0D3255E208E058E0010E5A2 /* CourseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseLoader.swift; sourceTree = "<group>"; };
 		D0D32561208E06020010E5A2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D0D32563208E06390010E5A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D0EA8B1E20923F02006AD21F /* CourseLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseLoaderTests.swift; sourceTree = "<group>"; };
 		E97D2E74909FAC50BDF62665 /* Pods-ExternalWorkersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExternalWorkersTests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ExternalWorkersTests/Pods-ExternalWorkersTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D32534208DEEE20010E5A2 /* ExternalWorkersTests.swift */,
+				D0EA8B1E20923F02006AD21F /* CourseLoaderTests.swift */,
 				D0D32536208DEEE20010E5A2 /* Info.plist */,
 			);
 			path = ExternalWorkersTests;
@@ -157,7 +157,6 @@
 		D14F796A5BE2F0EC9ADF9DB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D02F9D6820910BCB006BA167 /* Alamofire.framework */,
 				D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */,
 				D01630E2208E388000839D2E /* StepikCore.framework */,
 				CC578C27B8F90C2253616C9B /* Pods_ExternalWorkersTests.framework */,
@@ -188,7 +187,6 @@
 				D0D32522208DEEE10010E5A2 /* Frameworks */,
 				D0D32523208DEEE10010E5A2 /* Headers */,
 				D0D32524208DEEE10010E5A2 /* Resources */,
-				D02F9D6D20910C72006BA167 /* ShellScript */,
 				D02F9D6E20910C78006BA167 /* CopyFiles */,
 			);
 			buildRules = (
@@ -331,19 +329,6 @@
 			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-ExternalWorkersTests/Pods-ExternalWorkersTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D02F9D6D20910C72006BA167 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -362,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D32535208DEEE20010E5A2 /* ExternalWorkersTests.swift in Sources */,
+				D0EA8B1F20923F02006AD21F /* CourseLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

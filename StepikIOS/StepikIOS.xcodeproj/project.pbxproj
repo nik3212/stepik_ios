@@ -10,8 +10,6 @@
 		278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */; };
 		D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; };
 		D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D085C887209111EA00A7F2DE /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D085C8832091104900A7F2DE /* ExternalWorkers.framework */; };
-		D085C888209111EA00A7F2DE /* ExternalWorkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D085C8832091104900A7F2DE /* ExternalWorkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -38,6 +36,8 @@
 		D0D3257D208E12710010E5A2 /* SearchViewControllerInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3257C208E12710010E5A2 /* SearchViewControllerInitializer.swift */; };
 		D0D3257F208E13650010E5A2 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3257E208E13650010E5A2 /* DrawerViewController.swift */; };
 		D0D32581208E14490010E5A2 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32580208E14490010E5A2 /* ViewControllerFactory.swift */; };
+		D0EA8B1C2092399E006AD21F /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EA8B1B2092399D006AD21F /* ExternalWorkers.framework */; };
+		D0EA8B1D2092399E006AD21F /* ExternalWorkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0EA8B1B2092399D006AD21F /* ExternalWorkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */,
-				D085C888209111EA00A7F2DE /* ExternalWorkers.framework in Embed Frameworks */,
+				D0EA8B1D2092399E006AD21F /* ExternalWorkers.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,8 +77,6 @@
 		5611CC105BD7AA69D2CB685D /* Pods-StepikIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepikIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS.release.xcconfig"; sourceTree = "<group>"; };
 		5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepikIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01630DE208E360200839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D085C8832091104900A7F2DE /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D085C8892091122300A7F2DE /* ExternalWorkers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalWorkers.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphoneos/ExternalWorkers.framework"; sourceTree = "<group>"; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +109,7 @@
 		D0D3257C208E12710010E5A2 /* SearchViewControllerInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerInitializer.swift; sourceTree = "<group>"; };
 		D0D3257E208E13650010E5A2 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		D0D32580208E14490010E5A2 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		D0EA8B1B2092399D006AD21F /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D085C887209111EA00A7F2DE /* ExternalWorkers.framework in Frameworks */,
 				D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */,
+				D0EA8B1C2092399E006AD21F /* ExternalWorkers.framework in Frameworks */,
 				278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +152,6 @@
 		D0B56256208E29D60066578C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D085C8892091122300A7F2DE /* ExternalWorkers.framework */,
 				D01630DE208E360200839D2E /* StepikCore.framework */,
 				5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */,
 			);
@@ -163,7 +161,7 @@
 		D0D324BE208DEDC80010E5A2 = {
 			isa = PBXGroup;
 			children = (
-				D085C8832091104900A7F2DE /* ExternalWorkers.framework */,
+				D0EA8B1B2092399D006AD21F /* ExternalWorkers.framework */,
 				D0B56256208E29D60066578C /* Frameworks */,
 				D0D324C9208DEDC80010E5A2 /* StepikIOS */,
 				D0D324DE208DEDCB0010E5A2 /* StepikIOSTests */,
