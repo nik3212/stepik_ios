@@ -20,6 +20,11 @@ class SearchViewController: UIViewController {
         output.prepareData()
 
         setup()
+        setupStyle()
+    }
+    
+    private func setupStyle() {
+        tableView.backgroundColor = .backgroundGray
     }
     
     private func setup() {

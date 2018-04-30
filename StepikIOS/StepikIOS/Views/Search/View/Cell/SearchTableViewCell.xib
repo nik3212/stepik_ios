@@ -9,9 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Panton Light.otf">
-            <string>Panton-Light</string>
-        </array>
         <array key="Panton.otf">
             <string>Panton-Regular</string>
         </array>
@@ -19,48 +16,47 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="140" id="wjy-a7-hDV" customClass="SearchTableViewCell" customModule="StepikIOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="wjy-a7-hDV" customClass="SearchTableViewCell" customModule="StepikIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wjy-a7-hDV" id="jDa-fu-zY5">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryX-Dh-PLF">
-                        <rect key="frame" x="10" y="5" width="355" height="129.5"/>
+                        <rect key="frame" x="10" y="5" width="355" height="139.5"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6S-Ha-jFA">
-                                <rect key="frame" x="139" y="91" width="76" height="30"/>
-                                <fontDescription key="fontDescription" name="Panton-Light" family="Panton" pointSize="15"/>
-                                <state key="normal" title="Подробнее"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZFt-g1-LDh">
-                                <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                <rect key="frame" x="8" y="10" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="XaC-Zv-nTd"/>
-                                    <constraint firstAttribute="width" constant="80" id="z5W-Mi-UfY"/>
+                                    <constraint firstAttribute="width" constant="120" id="tIR-6z-7K3"/>
+                                    <constraint firstAttribute="height" constant="120" id="uaF-Mx-esx"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fag-vC-va5">
-                                <rect key="frame" x="93" y="5" width="32.5" height="17"/>
+                                <rect key="frame" x="140" y="40" width="32.5" height="17"/>
                                 <fontDescription key="fontDescription" name="Panton-Regular" family="Panton" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6S-Ha-jFA">
+                                <rect key="frame" x="327" y="108" width="20" height="22"/>
+                                <state key="normal" image="starButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZFt-g1-LDh" firstAttribute="top" secondItem="ryX-Dh-PLF" secondAttribute="top" constant="5" id="32v-Kw-4DS"/>
-                            <constraint firstItem="L6S-Ha-jFA" firstAttribute="centerX" secondItem="ryX-Dh-PLF" secondAttribute="centerX" id="Kg3-KQ-LZ8"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fag-vC-va5" secondAttribute="trailing" constant="10" id="Q90-BE-jwT"/>
-                            <constraint firstAttribute="bottom" secondItem="L6S-Ha-jFA" secondAttribute="bottom" constant="8" id="ZHD-y8-YdM"/>
-                            <constraint firstItem="ZFt-g1-LDh" firstAttribute="leading" secondItem="ryX-Dh-PLF" secondAttribute="leading" constant="5" id="aEb-Ey-126"/>
-                            <constraint firstItem="fag-vC-va5" firstAttribute="top" secondItem="ryX-Dh-PLF" secondAttribute="top" constant="5" id="dPP-qa-VEz"/>
-                            <constraint firstItem="fag-vC-va5" firstAttribute="leading" secondItem="ZFt-g1-LDh" secondAttribute="trailing" constant="8" id="pnC-oD-X0T"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fag-vC-va5" secondAttribute="trailing" constant="8" id="BXu-un-0in"/>
+                            <constraint firstItem="fag-vC-va5" firstAttribute="leading" secondItem="ZFt-g1-LDh" secondAttribute="trailing" constant="12" id="Dzw-57-s7i"/>
+                            <constraint firstItem="ZFt-g1-LDh" firstAttribute="centerY" secondItem="ryX-Dh-PLF" secondAttribute="centerY" id="Mcv-WE-4NS"/>
+                            <constraint firstItem="ZFt-g1-LDh" firstAttribute="leading" secondItem="ryX-Dh-PLF" secondAttribute="leading" constant="8" id="Rtg-Sg-wMP"/>
+                            <constraint firstAttribute="trailing" secondItem="L6S-Ha-jFA" secondAttribute="trailing" constant="8" id="Ztf-m1-zCR"/>
+                            <constraint firstItem="fag-vC-va5" firstAttribute="top" secondItem="ryX-Dh-PLF" secondAttribute="top" constant="40" id="hyc-15-C1U"/>
+                            <constraint firstItem="L6S-Ha-jFA" firstAttribute="bottom" secondItem="ZFt-g1-LDh" secondAttribute="bottom" id="jDc-F1-6uL"/>
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="ryX-Dh-PLF" secondAttribute="trailing" constant="10" id="Hfb-Xx-98d"/>
                     <constraint firstItem="ryX-Dh-PLF" firstAttribute="top" secondItem="jDa-fu-zY5" secondAttribute="top" constant="5" id="gR9-0l-JM3"/>
@@ -74,7 +70,10 @@
                 <outlet property="courseImageView" destination="ZFt-g1-LDh" id="fTj-gf-t3H"/>
                 <outlet property="nameCourseLabel" destination="fag-vC-va5" id="Jca-qd-dvo"/>
             </connections>
-            <point key="canvasLocation" x="43.5" y="65"/>
+            <point key="canvasLocation" x="43.5" y="70"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="starButton" width="20" height="20"/>
+    </resources>
 </document>

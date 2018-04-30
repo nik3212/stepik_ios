@@ -23,8 +23,6 @@ class SearchPresenter: SearchViewOutput {
         if (pagedCourse.meta.hasNext) {
             currentPage += 1
         }
-        
-        print(currentPage)
     }
     
     private let courseLoader = CourseLoader()

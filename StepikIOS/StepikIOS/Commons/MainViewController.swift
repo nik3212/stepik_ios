@@ -7,6 +7,7 @@ extension ScreenType {
             break
         case .search:
             let searchVC = SearchViewControllerInitializer.load(viewController: ViewControllerFactory.instantiate(.Search) as SearchViewController)
+            searchVC.navigationItem.title = "Курсы"
             return searchVC
         }
         return UIViewController()
@@ -23,6 +24,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tabBar.selectedItem = tabBar.items![0]
         
         fillContent()
     }
@@ -49,6 +52,7 @@ class MainViewController: UIViewController {
         view.addConstraint(NSLayoutConstraint(item: newView, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1.0, constant: 0.0))
         view.addConstraint(NSLayoutConstraint(item: newView, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1.0, constant: 0.0))
         newVC.didMove(toParentViewController: self)
+        self.navigationItem.title = newVC.navigationItem.title
     }
     
     private func removePrevious() {
@@ -63,7 +67,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print("Select")
+
     }
 }
 

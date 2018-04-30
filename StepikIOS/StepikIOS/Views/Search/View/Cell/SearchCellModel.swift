@@ -29,6 +29,7 @@ class SearchCellModel {
         loadCourseImage(url: courses[indexPath.row].courseCover, to: cell)
         
         cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, UIScreen.main.bounds.width)
+        cell.selectionStyle = .none
         
         return cell
     }

@@ -18,38 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqc-fq-Nij">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="fsg-cc-06J"/>
-                                    <tabBarItem systemItem="more" id="F4U-kG-Sc5"/>
-                                </items>
-                                <connections>
-                                    <outlet property="delegate" destination="Vsx-Fx-ZoX" id="ILl-N6-1cF"/>
-                                </connections>
-                            </tabBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-yd-LOB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-TT-TT7">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Избранное" image="starTabBarButton" id="f54-KO-ncO">
+                                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Курсы" image="listTabBarButton" id="7ZS-uK-Ubo"/>
+                                </items>
+                                <color key="tintColor" red="0.29505750868055558" green="0.2429470486111111" blue="0.26212565104166669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fc9-yd-LOB" firstAttribute="leading" secondItem="1UK-fh-oxc" secondAttribute="leading" id="3tA-Ts-tSp"/>
+                            <constraint firstItem="bJB-TT-TT7" firstAttribute="trailing" secondItem="1UK-fh-oxc" secondAttribute="trailing" id="4hx-lO-oaj"/>
                             <constraint firstItem="1UK-fh-oxc" firstAttribute="trailing" secondItem="fc9-yd-LOB" secondAttribute="trailing" id="DnR-FP-rEX"/>
-                            <constraint firstItem="1UK-fh-oxc" firstAttribute="bottom" secondItem="fqc-fq-Nij" secondAttribute="bottom" id="GXS-U8-bGF"/>
-                            <constraint firstItem="fqc-fq-Nij" firstAttribute="top" secondItem="fc9-yd-LOB" secondAttribute="bottom" id="K6t-Ld-PgN"/>
+                            <constraint firstItem="bJB-TT-TT7" firstAttribute="leading" secondItem="1UK-fh-oxc" secondAttribute="leading" id="V9J-hP-GbU"/>
                             <constraint firstItem="fc9-yd-LOB" firstAttribute="top" secondItem="1UK-fh-oxc" secondAttribute="top" id="ZXT-9L-cCK"/>
-                            <constraint firstItem="fqc-fq-Nij" firstAttribute="trailing" secondItem="1UK-fh-oxc" secondAttribute="trailing" id="fj3-Rt-NJa"/>
-                            <constraint firstItem="fqc-fq-Nij" firstAttribute="leading" secondItem="1UK-fh-oxc" secondAttribute="leading" id="n2A-HT-OUE"/>
+                            <constraint firstItem="bJB-TT-TT7" firstAttribute="top" secondItem="fc9-yd-LOB" secondAttribute="bottom" id="cqR-za-ZM6"/>
+                            <constraint firstItem="bJB-TT-TT7" firstAttribute="bottom" secondItem="1UK-fh-oxc" secondAttribute="bottom" id="eqc-Vu-Zsc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1UK-fh-oxc"/>
                     </view>
                     <navigationItem key="navigationItem" id="tpQ-yL-rzx"/>
                     <connections>
                         <outlet property="contentView" destination="fc9-yd-LOB" id="5UB-dt-4lw"/>
-                        <outlet property="tabBar" destination="fqc-fq-Nij" id="0N1-z5-aqz"/>
+                        <outlet property="tabBar" destination="bJB-TT-TT7" id="I2b-h2-Ets"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1c-Uf-Psz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,4 +80,8 @@
             <point key="canvasLocation" x="1244" y="45.42728635682159"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="listTabBarButton" width="24" height="24"/>
+        <image name="starTabBarButton" width="24" height="24"/>
+    </resources>
 </document>

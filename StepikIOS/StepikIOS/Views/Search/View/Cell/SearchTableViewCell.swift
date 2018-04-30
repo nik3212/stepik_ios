@@ -14,10 +14,7 @@ class SearchTableViewCell: UITableViewCell {
     }
     
     private func setupStyle() {
-        courseImageView.layer.cornerRadius = 10
-        courseImageView.layer.masksToBounds = true
-        
-        backView.layer.cornerRadius = 10
+        backView.layer.cornerRadius = 2
         
         backView.layer.shadowColor = UIColor.black.cgColor
         backView.layer.shadowOpacity = 0.2
