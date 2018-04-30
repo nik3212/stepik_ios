@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D008583720935899005AEC03 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008583620935899005AEC03 /* ImageLoader.swift */; };
 		D01630E1208E388000839D2E /* Pods_ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */; };
 		D01630E3208E388000839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630E2208E388000839D2E /* StepikCore.framework */; };
 		D01630E6208E394300839D2E /* Pods_ExternalWorkers.framework in Resources */ = {isa = PBXBuildFile; fileRef = D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */; };
@@ -48,6 +49,7 @@
 		BACD21EFFCC58C7C995AC62C /* Pods-ExternalWorkersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExternalWorkersTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ExternalWorkersTests/Pods-ExternalWorkersTests.release.xcconfig"; sourceTree = "<group>"; };
 		C19D1F2D02232FA94BBD1D2A /* Pods-ExternalWorkers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExternalWorkers.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ExternalWorkers/Pods-ExternalWorkers.debug.xcconfig"; sourceTree = "<group>"; };
 		CC578C27B8F90C2253616C9B /* Pods_ExternalWorkersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExternalWorkersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D008583620935899005AEC03 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		D01630E0208E388000839D2E /* Pods_ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01630E2208E388000839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D32526208DEEE10010E5A2 /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D3255E208E058E0010E5A2 /* CourseLoader.swift */,
+				D008583620935899005AEC03 /* ImageLoader.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			files = (
 				D0D32562208E06020010E5A2 /* Result.swift in Sources */,
 				D0D3255F208E058E0010E5A2 /* CourseLoader.swift in Sources */,
+				D008583720935899005AEC03 /* ImageLoader.swift in Sources */,
 				D0D32564208E06390010E5A2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

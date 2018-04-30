@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */; };
+		D008584220936D21005AEC03 /* Panton ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584120936D21005AEC03 /* Panton ExtraLight.otf */; };
+		D008584420936D2C005AEC03 /* Panton Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584320936D2B005AEC03 /* Panton Bold.otf */; };
+		D008584620936D40005AEC03 /* Panton Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584520936D40005AEC03 /* Panton Light.otf */; };
+		D008584820936D50005AEC03 /* Panton.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584720936D4F005AEC03 /* Panton.otf */; };
 		D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; };
 		D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D08408F4209778E5003CB30D /* KRPullLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08408F3209778E5003CB30D /* KRPullLoader.framework */; };
+		D08408F5209778E5003CB30D /* KRPullLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D08408F3209778E5003CB30D /* KRPullLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -30,7 +36,7 @@
 		D0D32571208E0B940010E5A2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32570208E0B940010E5A2 /* SearchTableViewCell.swift */; };
 		D0D32573208E0C830010E5A2 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D32572208E0C830010E5A2 /* SearchTableViewCell.xib */; };
 		D0D32575208E0FD50010E5A2 /* SearchViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32574208E0FD50010E5A2 /* SearchViewOutput.swift */; };
-		D0D32577208E10100010E5A2 /* SearcgViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32576208E10100010E5A2 /* SearcgViewInput.swift */; };
+		D0D32577208E10100010E5A2 /* SearchViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32576208E10100010E5A2 /* SearchViewInput.swift */; };
 		D0D32579208E10470010E5A2 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D32578208E10470010E5A2 /* SearchPresenter.swift */; };
 		D0D3257B208E10980010E5A2 /* SearchViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3257A208E10980010E5A2 /* SearchViewConfigurator.swift */; };
 		D0D3257D208E12710010E5A2 /* SearchViewControllerInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D3257C208E12710010E5A2 /* SearchViewControllerInitializer.swift */; };
@@ -65,6 +71,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */,
+				D08408F5209778E5003CB30D /* KRPullLoader.framework in Embed Frameworks */,
 				D0EA8B1D2092399E006AD21F /* ExternalWorkers.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -76,7 +83,12 @@
 		40B580C23E243BE27E8E00AF /* Pods-StepikIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepikIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5611CC105BD7AA69D2CB685D /* Pods-StepikIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepikIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS.release.xcconfig"; sourceTree = "<group>"; };
 		5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepikIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D008584120936D21005AEC03 /* Panton ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton ExtraLight.otf"; sourceTree = "<group>"; };
+		D008584320936D2B005AEC03 /* Panton Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton Bold.otf"; sourceTree = "<group>"; };
+		D008584520936D40005AEC03 /* Panton Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton Light.otf"; sourceTree = "<group>"; };
+		D008584720936D4F005AEC03 /* Panton.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panton.otf; sourceTree = "<group>"; };
 		D01630DE208E360200839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08408F3209778E5003CB30D /* KRPullLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = KRPullLoader.framework; path = "../Release-iphonesimulator/KRPullLoader/KRPullLoader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +115,7 @@
 		D0D32570208E0B940010E5A2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		D0D32572208E0C830010E5A2 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		D0D32574208E0FD50010E5A2 /* SearchViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewOutput.swift; sourceTree = "<group>"; };
-		D0D32576208E10100010E5A2 /* SearcgViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearcgViewInput.swift; sourceTree = "<group>"; };
+		D0D32576208E10100010E5A2 /* SearchViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewInput.swift; sourceTree = "<group>"; };
 		D0D32578208E10470010E5A2 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		D0D3257A208E10980010E5A2 /* SearchViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewConfigurator.swift; sourceTree = "<group>"; };
 		D0D3257C208E12710010E5A2 /* SearchViewControllerInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerInitializer.swift; sourceTree = "<group>"; };
@@ -120,6 +132,7 @@
 				D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */,
 				D0EA8B1C2092399E006AD21F /* ExternalWorkers.framework in Frameworks */,
 				278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */,
+				D08408F4209778E5003CB30D /* KRPullLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +162,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D008583820936B13005AEC03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D008583A20936B24005AEC03 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D008583A20936B24005AEC03 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D008584720936D4F005AEC03 /* Panton.otf */,
+				D008584520936D40005AEC03 /* Panton Light.otf */,
+				D008584320936D2B005AEC03 /* Panton Bold.otf */,
+				D008584120936D21005AEC03 /* Panton ExtraLight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D0B56256208E29D60066578C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +193,8 @@
 		D0D324BE208DEDC80010E5A2 = {
 			isa = PBXGroup;
 			children = (
+				D08408F3209778E5003CB30D /* KRPullLoader.framework */,
+				D008583820936B13005AEC03 /* Resources */,
 				D0EA8B1B2092399D006AD21F /* ExternalWorkers.framework */,
 				D0B56256208E29D60066578C /* Frameworks */,
 				D0D324C9208DEDC80010E5A2 /* StepikIOS */,
@@ -304,7 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D32574208E0FD50010E5A2 /* SearchViewOutput.swift */,
-				D0D32576208E10100010E5A2 /* SearcgViewInput.swift */,
+				D0D32576208E10100010E5A2 /* SearchViewInput.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -427,11 +461,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D32553208DF6890010E5A2 /* Bookmarks.storyboard in Resources */,
+				D008584620936D40005AEC03 /* Panton Light.otf in Resources */,
 				D0D324D5208DEDCB0010E5A2 /* LaunchScreen.storyboard in Resources */,
 				D0D324D2208DEDCB0010E5A2 /* Assets.xcassets in Resources */,
 				D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */,
 				D0D32555208DF6940010E5A2 /* Search.storyboard in Resources */,
 				D0D32573208E0C830010E5A2 /* SearchTableViewCell.xib in Resources */,
+				D008584220936D21005AEC03 /* Panton ExtraLight.otf in Resources */,
+				D008584420936D2C005AEC03 /* Panton Bold.otf in Resources */,
+				D008584820936D50005AEC03 /* Panton.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,10 +516,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KRPullLoader/KRPullLoader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRPullLoader.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -512,7 +552,7 @@
 				D0D3257F208E13650010E5A2 /* DrawerViewController.swift in Sources */,
 				D0D3256F208E0B790010E5A2 /* SearchCellModel.swift in Sources */,
 				D0D32575208E0FD50010E5A2 /* SearchViewOutput.swift in Sources */,
-				D0D32577208E10100010E5A2 /* SearcgViewInput.swift in Sources */,
+				D0D32577208E10100010E5A2 /* SearchViewInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

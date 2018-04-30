@@ -1,7 +1,7 @@
 import StepikCore
 
 public protocol CourseLoaderProtocol {
-    func loadCourses(_ completion: @escaping (Result<PagedCourses>)->())
+    func loadCourses(page: Int, _ completion: @escaping (Result<PagedCourses>)->())
 }
 
 import Alamofire
@@ -12,11 +12,13 @@ protocol AlamofireResponcable {
 
 extension DataRequest: AlamofireResponcable {}
 public class CourseLoader: CourseLoaderProtocol {
-    var courseRequest: AlamofireResponcable = Alamofire.request(Constants.searchUrl + "1")
+    var courseRequest: AlamofireResponcable!
     
     public init() {}
     
-    public func loadCourses(_ completion: @escaping (Result<PagedCourses>)->()) {
+    public func loadCourses(page: Int, _ completion: @escaping (Result<PagedCourses>)->()) {
+        courseRequest = Alamofire.request(Constants.searchUrl + String(page))
+        
         courseRequest.response(queue: nil) { (response) in
             if let data = response.data,
                 let courses = try? JSONDecoder().decode(PagedCourses.self, from: data) {

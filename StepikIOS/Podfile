@@ -12,8 +12,13 @@ def net_pods
     pod 'Alamofire', '~> 4.7.2'
 end
 
+def ui_pods
+    pod 'KRPullLoader'
+end
+
 target :StepikIOS do
    xcodeproj 'StepikIOS.xcodeproj'
+   ui_pods
    net_pods 
 end
 

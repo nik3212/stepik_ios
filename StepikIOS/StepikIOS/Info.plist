@@ -14,6 +14,13 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Panton.otf</string>
+		<string>Panton Light.otf</string>
+		<string>Panton Bold.otf</string>
+		<string>Panton ExtraLight.otf</string>
+	</array>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

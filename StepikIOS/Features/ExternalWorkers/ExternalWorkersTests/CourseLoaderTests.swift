@@ -40,7 +40,7 @@ class CourseLoaderTests: XCTestCase {
         request.dataString = text
         
         let exp = expectation(description: "Waiting response")
-        courseLoader.loadCourses { (result) in
+        courseLoader.loadCourses(page: 1) { (result) in
             completion(result)
             exp.fulfill()
         }

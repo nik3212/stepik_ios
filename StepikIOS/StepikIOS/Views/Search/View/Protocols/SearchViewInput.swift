@@ -1,6 +1,7 @@
 import Foundation
+import StepikCore
 
 protocol SearchViewInput {
     func reloadData()
-    func setupView(viewModel: SearchCellModel)
+    func setupData(data: [PagedCourses.Course])
 }
