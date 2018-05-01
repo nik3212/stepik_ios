@@ -74,7 +74,7 @@ extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = viewModel.cellInstance(tableView, cellForRowAt: indexPath) as! SearchTableViewCell
         cell.delegate = self
-        return cell//viewModel.cellInstance(tableView, cellForRowAt: indexPath)
+        return cell
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
