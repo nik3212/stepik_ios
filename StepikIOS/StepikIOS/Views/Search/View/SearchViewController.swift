@@ -72,7 +72,9 @@ extension SearchViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return viewModel.cellInstance(tableView, cellForRowAt: indexPath)
+        let cell = viewModel.cellInstance(tableView, cellForRowAt: indexPath) as! SearchTableViewCell
+        cell.delegate = self
+        return cell//viewModel.cellInstance(tableView, cellForRowAt: indexPath)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -98,5 +100,11 @@ extension SearchViewController: UITableViewDataSource {
                 cell.alpha = 1
             }, completion: nil)
         }
+    }
+}
+
+extension SearchViewController: SearchTableViewCellDelegate {
+    func didBookmarksTap(_ cell: SearchTableViewCell) {
+        print(tableView.indexPath(for: cell))
     }
 }

@@ -16,6 +16,7 @@
 		D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D08408F4209778E5003CB30D /* KRPullLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08408F3209778E5003CB30D /* KRPullLoader.framework */; };
 		D08408F5209778E5003CB30D /* KRPullLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D08408F3209778E5003CB30D /* KRPullLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D08408FE2097B836003CB30D /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08408FD2097B836003CB30D /* BookmarksViewController.swift */; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -89,6 +90,7 @@
 		D008584720936D4F005AEC03 /* Panton.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panton.otf; sourceTree = "<group>"; };
 		D01630DE208E360200839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08408F3209778E5003CB30D /* KRPullLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = KRPullLoader.framework; path = "../Release-iphonesimulator/KRPullLoader/KRPullLoader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08408FD2097B836003CB30D /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,44 @@
 				D008584120936D21005AEC03 /* Panton ExtraLight.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D08408F82097B7E8003CB30D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D08408FC2097B804003CB30D /* Protocols */,
+				D08408FB2097B7FE003CB30D /* Cell */,
+				D08408FD2097B836003CB30D /* BookmarksViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D08408F92097B7EE003CB30D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D08408FA2097B7F4003CB30D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		D08408FB2097B7FE003CB30D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D08408FC2097B804003CB30D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		D0B56256208E29D60066578C /* Frameworks */ = {
@@ -302,6 +342,9 @@
 		D0D32551208DF5B00010E5A2 /* Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
+				D08408FA2097B7F4003CB30D /* Configurator */,
+				D08408F92097B7EE003CB30D /* Presenter */,
+				D08408F82097B7E8003CB30D /* View */,
 				D0D32552208DF6890010E5A2 /* Bookmarks.storyboard */,
 			);
 			path = Bookmarks;
@@ -543,6 +586,7 @@
 				D0D3257B208E10980010E5A2 /* SearchViewConfigurator.swift in Sources */,
 				D0D3256B208E0B130010E5A2 /* SearchViewController.swift in Sources */,
 				D0D32571208E0B940010E5A2 /* SearchTableViewCell.swift in Sources */,
+				D08408FE2097B836003CB30D /* BookmarksViewController.swift in Sources */,
 				D0D3254C208DF31B0010E5A2 /* UITableView+.swift in Sources */,
 				D0D3254A208DF3050010E5A2 /* ReusableView.swift in Sources */,
 				D0D3257D208E12710010E5A2 /* SearchViewControllerInitializer.swift in Sources */,

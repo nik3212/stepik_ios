@@ -4,13 +4,14 @@ extension ScreenType {
     var viewController: UIViewController {
         switch self {
         case .bookmarks:
-            break
+            let bookmarksVC = BookmarksViewController()
+            bookmarksVC.navigationItem.title = "Избранное"
+            return bookmarksVC
         case .search:
             let searchVC = SearchViewControllerInitializer.load(viewController: ViewControllerFactory.instantiate(.Search) as SearchViewController)
             searchVC.navigationItem.title = "Курсы"
             return searchVC
         }
-        return UIViewController()
     }
 }
 
@@ -19,7 +20,7 @@ class MainViewController: UIViewController {
     @IBOutlet var contentView: UIView!
     @IBOutlet var tabBar: UITabBar!
 
-    private var currentScreen: ScreenType = .search
+    private var currentScreen: ScreenType = .bookmarks
     private var currentContentViewController: UIViewController?
     
     override func viewDidLoad() {
@@ -67,7 +68,13 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-
+        if item == self.tabBar.items![0] {
+            currentScreen = .bookmarks
+            fillContent()
+        } else if item == self.tabBar.items![1] {
+            currentScreen = .search
+            fillContent()
+        }
     }
 }
 

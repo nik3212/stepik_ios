@@ -42,6 +42,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6S-Ha-jFA">
                                 <rect key="frame" x="327" y="108" width="20" height="22"/>
                                 <state key="normal" image="starButton"/>
+                                <connections>
+                                    <action selector="addBookmark:" destination="wjy-a7-hDV" eventType="touchUpInside" id="PKh-rS-eiy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
