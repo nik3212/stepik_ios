@@ -4,7 +4,7 @@ extension ScreenType {
     var viewController: UIViewController {
         switch self {
         case .bookmarks:
-            let bookmarksVC = ViewControllerFactory.instantiate(.Bookmarks) as BookmarksViewController
+            let bookmarksVC = BookmarksViewControllerInitializer.load(viewController: ViewControllerFactory.instantiate(.Bookmarks) as BookmarksViewController)
             return bookmarksVC
         case .search:
             let searchVC = SearchViewControllerInitializer.load(viewController: ViewControllerFactory.instantiate(.Search) as SearchViewController)

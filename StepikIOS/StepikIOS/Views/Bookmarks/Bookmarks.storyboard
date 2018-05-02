@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MeR-yE-jpu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gMG-2g-WOP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,31 +11,34 @@
     </dependencies>
     <scenes>
         <!--Bookmarks View Controller-->
-        <scene sceneID="5Da-ES-8wl">
+        <scene sceneID="2W5-Vp-QNM">
             <objects>
-                <viewController storyboardIdentifier="BookmarksViewController" id="MeR-yE-jpu" customClass="BookmarksViewController" customModule="StepikIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UUT-gW-n9v">
+                <viewController storyboardIdentifier="BookmarksViewController" id="gMG-2g-WOP" customClass="BookmarksViewController" customModule="StepikIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rUG-fs-HBe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMc-oY-mG2">
-                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hrl-lO-Mix">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ZMc-oY-mG2" firstAttribute="centerX" secondItem="UUT-gW-n9v" secondAttribute="centerX" id="5kz-7Y-Wm6"/>
-                            <constraint firstItem="ZMc-oY-mG2" firstAttribute="centerY" secondItem="UUT-gW-n9v" secondAttribute="centerY" id="XGJ-Ps-l8b"/>
+                            <constraint firstItem="M3O-LZ-u55" firstAttribute="trailing" secondItem="Hrl-lO-Mix" secondAttribute="trailing" id="9eM-eg-Ac5"/>
+                            <constraint firstItem="Hrl-lO-Mix" firstAttribute="top" secondItem="M3O-LZ-u55" secondAttribute="top" id="RfX-JL-e5d"/>
+                            <constraint firstItem="M3O-LZ-u55" firstAttribute="bottom" secondItem="Hrl-lO-Mix" secondAttribute="bottom" id="Xiy-fh-wM9"/>
+                            <constraint firstItem="Hrl-lO-Mix" firstAttribute="leading" secondItem="M3O-LZ-u55" secondAttribute="leading" id="hAG-Cv-yOI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="TMM-Lo-7im"/>
+                        <viewLayoutGuide key="safeArea" id="M3O-LZ-u55"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Hrl-lO-Mix" id="lql-to-bR8"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bmZ-ER-arE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAF-Zp-qIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="171"/>
+            <point key="canvasLocation" x="649" y="118"/>
         </scene>
     </scenes>
 </document>

@@ -22,6 +22,14 @@
 		D0B55E362099CB980006B121 /* CoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E352099CB980006B121 /* CoreDataWrapper.swift */; };
 		D0B55E382099D74F0006B121 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E372099D74F0006B121 /* CoreDataStack.framework */; };
 		D0B55E392099D74F0006B121 /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E372099D74F0006B121 /* CoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0B55E3B2099D8A30006B121 /* BookmarksViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E3A2099D8A30006B121 /* BookmarksViewOutput.swift */; };
+		D0B55E3D2099D8C30006B121 /* BookmarksViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E3C2099D8C30006B121 /* BookmarksViewInput.swift */; };
+		D0B55E3F2099D8FC0006B121 /* BookmarksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E3E2099D8FC0006B121 /* BookmarksPresenter.swift */; };
+		D0B55E412099D91A0006B121 /* BookmarksViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E402099D91A0006B121 /* BookmarksViewControllerConfigurator.swift */; };
+		D0B55E432099D9530006B121 /* BookmarksViewInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E422099D9530006B121 /* BookmarksViewInitializer.swift */; };
+		D0B55E482099DE5A0006B121 /* EmptyDataSet_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E472099DE5A0006B121 /* EmptyDataSet_Swift.framework */; };
+		D0B55E492099DE5A0006B121 /* EmptyDataSet_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E472099DE5A0006B121 /* EmptyDataSet_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0B55E4B2099E8370006B121 /* BookmarksCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E4A2099E8370006B121 /* BookmarksCellModel.swift */; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -76,6 +84,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D0B55E492099DE5A0006B121 /* EmptyDataSet_Swift.framework in Embed Frameworks */,
 				D0B55E392099D74F0006B121 /* CoreDataStack.framework in Embed Frameworks */,
 				D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */,
 				D08408F5209778E5003CB30D /* KRPullLoader.framework in Embed Frameworks */,
@@ -101,6 +110,13 @@
 		D0B55E332099B92F0006B121 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		D0B55E352099CB980006B121 /* CoreDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWrapper.swift; sourceTree = "<group>"; };
 		D0B55E372099D74F0006B121 /* CoreDataStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B55E3A2099D8A30006B121 /* BookmarksViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewOutput.swift; sourceTree = "<group>"; };
+		D0B55E3C2099D8C30006B121 /* BookmarksViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewInput.swift; sourceTree = "<group>"; };
+		D0B55E3E2099D8FC0006B121 /* BookmarksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksPresenter.swift; sourceTree = "<group>"; };
+		D0B55E402099D91A0006B121 /* BookmarksViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewControllerConfigurator.swift; sourceTree = "<group>"; };
+		D0B55E422099D9530006B121 /* BookmarksViewInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewInitializer.swift; sourceTree = "<group>"; };
+		D0B55E472099DE5A0006B121 /* EmptyDataSet_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EmptyDataSet_Swift.framework; path = "EmptyDataSet-Swift/EmptyDataSet_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B55E4A2099E8370006B121 /* BookmarksCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksCellModel.swift; sourceTree = "<group>"; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +162,7 @@
 				D0EA8B1C2092399E006AD21F /* ExternalWorkers.framework in Frameworks */,
 				278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */,
 				D08408F4209778E5003CB30D /* KRPullLoader.framework in Frameworks */,
+				D0B55E482099DE5A0006B121 /* EmptyDataSet_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +233,7 @@
 		D08408F92097B7EE003CB30D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				D0B55E3E2099D8FC0006B121 /* BookmarksPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -223,6 +241,8 @@
 		D08408FA2097B7F4003CB30D /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
+				D0B55E402099D91A0006B121 /* BookmarksViewControllerConfigurator.swift */,
+				D0B55E422099D9530006B121 /* BookmarksViewInitializer.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -230,6 +250,7 @@
 		D08408FB2097B7FE003CB30D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				D0B55E4A2099E8370006B121 /* BookmarksCellModel.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -237,6 +258,8 @@
 		D08408FC2097B804003CB30D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				D0B55E3A2099D8A30006B121 /* BookmarksViewOutput.swift */,
+				D0B55E3C2099D8C30006B121 /* BookmarksViewInput.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -269,6 +292,7 @@
 		D0D324BE208DEDC80010E5A2 = {
 			isa = PBXGroup;
 			children = (
+				D0B55E472099DE5A0006B121 /* EmptyDataSet_Swift.framework */,
 				D0B55E372099D74F0006B121 /* CoreDataStack.framework */,
 				D08408F3209778E5003CB30D /* KRPullLoader.framework */,
 				D0EA8B1B2092399D006AD21F /* ExternalWorkers.framework */,
@@ -598,11 +622,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/KRPullLoader/KRPullLoader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmptyDataSet_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRPullLoader.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +644,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D32544208DF1D00010E5A2 /* UIImage+.swift in Sources */,
+				D0B55E3F2099D8FC0006B121 /* BookmarksPresenter.swift in Sources */,
+				D0B55E432099D9530006B121 /* BookmarksViewInitializer.swift in Sources */,
 				D0D32548208DF2CE0010E5A2 /* NibLoadableView.swift in Sources */,
 				D0D32546208DF27E0010E5A2 /* Color+.swift in Sources */,
 				D0D32581208E14490010E5A2 /* ViewControllerFactory.swift in Sources */,
@@ -625,6 +653,7 @@
 				D0D3257B208E10980010E5A2 /* SearchViewConfigurator.swift in Sources */,
 				D0D3256B208E0B130010E5A2 /* SearchViewController.swift in Sources */,
 				D0D32571208E0B940010E5A2 /* SearchTableViewCell.swift in Sources */,
+				D0B55E412099D91A0006B121 /* BookmarksViewControllerConfigurator.swift in Sources */,
 				D08408FE2097B836003CB30D /* BookmarksViewController.swift in Sources */,
 				D0D3254C208DF31B0010E5A2 /* UITableView+.swift in Sources */,
 				D0D3254A208DF3050010E5A2 /* ReusableView.swift in Sources */,
@@ -632,11 +661,14 @@
 				D03DDC8B2098F170005737F6 /* Courses.xcdatamodeld in Sources */,
 				D0D3254E208DF32C0010E5A2 /* UITableViewCell+.swift in Sources */,
 				D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */,
+				D0B55E3D2099D8C30006B121 /* BookmarksViewInput.swift in Sources */,
 				D0B55E342099B92F0006B121 /* RadioButton.swift in Sources */,
 				D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */,
 				D0D3257F208E13650010E5A2 /* DrawerViewController.swift in Sources */,
 				D0B55E362099CB980006B121 /* CoreDataWrapper.swift in Sources */,
+				D0B55E3B2099D8A30006B121 /* BookmarksViewOutput.swift in Sources */,
 				D0D3256F208E0B790010E5A2 /* SearchCellModel.swift in Sources */,
+				D0B55E4B2099E8370006B121 /* BookmarksCellModel.swift in Sources */,
 				D0D32575208E0FD50010E5A2 /* SearchViewOutput.swift in Sources */,
 				D0D32577208E10100010E5A2 /* SearchViewInput.swift in Sources */,
 			);
