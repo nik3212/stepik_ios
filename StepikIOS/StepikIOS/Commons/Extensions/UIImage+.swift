@@ -2,7 +2,8 @@ import UIKit
 
 extension UIImage {
     enum Asset: String {
-        case mainIcon = "mainicon"
+        case selectedCourse = "selectedStarButton"
+        case unSelectedCourse = "starButton"
         
         var image: UIImage {
             return UIImage(asset: self)

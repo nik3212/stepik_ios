@@ -4,12 +4,10 @@ extension ScreenType {
     var viewController: UIViewController {
         switch self {
         case .bookmarks:
-            let bookmarksVC = BookmarksViewController()
-            bookmarksVC.navigationItem.title = "Избранное"
+            let bookmarksVC = ViewControllerFactory.instantiate(.Bookmarks) as BookmarksViewController
             return bookmarksVC
         case .search:
             let searchVC = SearchViewControllerInitializer.load(viewController: ViewControllerFactory.instantiate(.Search) as SearchViewController)
-            searchVC.navigationItem.title = "Курсы"
             return searchVC
         }
     }
@@ -53,7 +51,7 @@ class MainViewController: UIViewController {
         view.addConstraint(NSLayoutConstraint(item: newView, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1.0, constant: 0.0))
         view.addConstraint(NSLayoutConstraint(item: newView, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1.0, constant: 0.0))
         newVC.didMove(toParentViewController: self)
-        self.navigationItem.title = newVC.navigationItem.title
+        self.navigationItem.title = currentScreen.title
     }
     
     private func removePrevious() {

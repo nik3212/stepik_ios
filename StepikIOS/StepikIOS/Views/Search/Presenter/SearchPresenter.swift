@@ -16,6 +16,10 @@ class SearchPresenter: SearchViewOutput {
         }
     }
     
+    func update(course index: Int) {
+        view.updateStoredItem(by: index)
+    }
+    
     private func setupData(_ pagedCourse: PagedCourses) {
         view.setupData(data: pagedCourse.courses)
         view.reloadData()

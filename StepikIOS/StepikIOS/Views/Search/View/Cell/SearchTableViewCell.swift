@@ -10,7 +10,7 @@ class SearchTableViewCell: UITableViewCell {
     
     @IBOutlet var courseImageView: UIImageView!
     @IBOutlet var nameCourseLabel: UILabel!
-    @IBOutlet var bookmarkButton: UIButton!
+    @IBOutlet var bookmarkButton: RadioButton!
     
     @IBOutlet var backView: UIView!
     

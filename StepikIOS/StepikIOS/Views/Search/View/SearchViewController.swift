@@ -61,6 +61,14 @@ extension SearchViewController: SearchViewInput {
         self.viewModel.append(data)
     }
     
+    func updateStoredItem(by index: Int) {
+        if viewModel.isExist(index: index) {
+            viewModel.remove(index: index)
+        } else {
+            viewModel.save(index: index)
+        }
+    }
+    
     func reloadData() {
         tableView.reloadData()
     }
@@ -76,35 +84,12 @@ extension SearchViewController: UITableViewDataSource {
         cell.delegate = self
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        var lastInitialDisplayableCell = false
-        
-        if viewModel.countItems() > 0 && !finishedLoadingInitialTableCells {
-            if let indexPathsForVisibleRows = tableView.indexPathsForVisibleRows,
-                let lastIndexPath = indexPathsForVisibleRows.last, lastIndexPath.row == indexPath.row {
-                lastInitialDisplayableCell = true
-            }
-        }
-        
-        if !finishedLoadingInitialTableCells {
-            if lastInitialDisplayableCell {
-                finishedLoadingInitialTableCells = true
-            }
-
-            cell.transform = CGAffineTransform(translationX: 0, y: cell.bounds.height / 2)
-            cell.alpha = 0
-            
-            UIView.animate(withDuration: 0.5, delay: 0.05*Double(indexPath.row), options: [.curveEaseInOut], animations: {
-                cell.transform = CGAffineTransform(translationX: 0, y: 0)
-                cell.alpha = 1
-            }, completion: nil)
-        }
-    }
 }
 
 extension SearchViewController: SearchTableViewCellDelegate {
     func didBookmarksTap(_ cell: SearchTableViewCell) {
-        print(tableView.indexPath(for: cell))
+        if let indexPath = tableView.indexPath(for: cell) {
+            output.update(course: indexPath.row)
+        }
     }
 }

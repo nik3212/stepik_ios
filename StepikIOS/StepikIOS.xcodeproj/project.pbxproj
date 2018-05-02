@@ -14,9 +14,14 @@
 		D008584820936D50005AEC03 /* Panton.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584720936D4F005AEC03 /* Panton.otf */; };
 		D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; };
 		D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D03DDC8B2098F170005737F6 /* Courses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D03DDC892098F170005737F6 /* Courses.xcdatamodeld */; };
 		D08408F4209778E5003CB30D /* KRPullLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08408F3209778E5003CB30D /* KRPullLoader.framework */; };
 		D08408F5209778E5003CB30D /* KRPullLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D08408F3209778E5003CB30D /* KRPullLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D08408FE2097B836003CB30D /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08408FD2097B836003CB30D /* BookmarksViewController.swift */; };
+		D0B55E342099B92F0006B121 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E332099B92F0006B121 /* RadioButton.swift */; };
+		D0B55E362099CB980006B121 /* CoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E352099CB980006B121 /* CoreDataWrapper.swift */; };
+		D0B55E382099D74F0006B121 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E372099D74F0006B121 /* CoreDataStack.framework */; };
+		D0B55E392099D74F0006B121 /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E372099D74F0006B121 /* CoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -71,6 +76,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D0B55E392099D74F0006B121 /* CoreDataStack.framework in Embed Frameworks */,
 				D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */,
 				D08408F5209778E5003CB30D /* KRPullLoader.framework in Embed Frameworks */,
 				D0EA8B1D2092399E006AD21F /* ExternalWorkers.framework in Embed Frameworks */,
@@ -89,8 +95,12 @@
 		D008584520936D40005AEC03 /* Panton Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton Light.otf"; sourceTree = "<group>"; };
 		D008584720936D4F005AEC03 /* Panton.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panton.otf; sourceTree = "<group>"; };
 		D01630DE208E360200839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03DDC8A2098F170005737F6 /* Courses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Courses.xcdatamodel; sourceTree = "<group>"; };
 		D08408F3209778E5003CB30D /* KRPullLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = KRPullLoader.framework; path = "../Release-iphonesimulator/KRPullLoader/KRPullLoader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08408FD2097B836003CB30D /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		D0B55E332099B92F0006B121 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		D0B55E352099CB980006B121 /* CoreDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWrapper.swift; sourceTree = "<group>"; };
+		D0B55E372099D74F0006B121 /* CoreDataStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B55E382099D74F0006B121 /* CoreDataStack.framework in Frameworks */,
 				D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */,
 				D0EA8B1C2092399E006AD21F /* ExternalWorkers.framework in Frameworks */,
 				278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */,
@@ -183,6 +194,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		D03DDC882098F112005737F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D03DDC892098F170005737F6 /* Courses.xcdatamodeld */,
+				D0B55E352099CB980006B121 /* CoreDataWrapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D08408F82097B7E8003CB30D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +241,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		D0B55E312099B9130006B121 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D0B55E322099B9180006B121 /* RadioButton */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D0B55E322099B9180006B121 /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				D0B55E332099B92F0006B121 /* RadioButton.swift */,
+			);
+			path = RadioButton;
+			sourceTree = "<group>";
+		};
 		D0B56256208E29D60066578C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,9 +269,10 @@
 		D0D324BE208DEDC80010E5A2 = {
 			isa = PBXGroup;
 			children = (
+				D0B55E372099D74F0006B121 /* CoreDataStack.framework */,
 				D08408F3209778E5003CB30D /* KRPullLoader.framework */,
-				D008583820936B13005AEC03 /* Resources */,
 				D0EA8B1B2092399D006AD21F /* ExternalWorkers.framework */,
+				D008583820936B13005AEC03 /* Resources */,
 				D0B56256208E29D60066578C /* Frameworks */,
 				D0D324C9208DEDC80010E5A2 /* StepikIOS */,
 				D0D324DE208DEDCB0010E5A2 /* StepikIOSTests */,
@@ -289,9 +326,11 @@
 		D0D32540208DF19E0010E5A2 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				D0B55E312099B9130006B121 /* UI */,
 				D0D324CC208DEDC90010E5A2 /* MainViewController.swift */,
 				D0D3257E208E13650010E5A2 /* DrawerViewController.swift */,
 				D0D324CE208DEDC90010E5A2 /* Main.storyboard */,
+				D03DDC882098F112005737F6 /* Model */,
 				D0D32542208DF1AE0010E5A2 /* Extensions */,
 				D0D32541208DF1AA0010E5A2 /* Utils */,
 			);
@@ -590,10 +629,13 @@
 				D0D3254C208DF31B0010E5A2 /* UITableView+.swift in Sources */,
 				D0D3254A208DF3050010E5A2 /* ReusableView.swift in Sources */,
 				D0D3257D208E12710010E5A2 /* SearchViewControllerInitializer.swift in Sources */,
+				D03DDC8B2098F170005737F6 /* Courses.xcdatamodeld in Sources */,
 				D0D3254E208DF32C0010E5A2 /* UITableViewCell+.swift in Sources */,
 				D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */,
+				D0B55E342099B92F0006B121 /* RadioButton.swift in Sources */,
 				D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */,
 				D0D3257F208E13650010E5A2 /* DrawerViewController.swift in Sources */,
+				D0B55E362099CB980006B121 /* CoreDataWrapper.swift in Sources */,
 				D0D3256F208E0B790010E5A2 /* SearchCellModel.swift in Sources */,
 				D0D32575208E0FD50010E5A2 /* SearchViewOutput.swift in Sources */,
 				D0D32577208E10100010E5A2 /* SearchViewInput.swift in Sources */,
@@ -709,7 +751,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5611CC105BD7AA69D2CB685D /* Pods-StepikIOS.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
@@ -809,6 +850,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D03DDC892098F170005737F6 /* Courses.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D03DDC8A2098F170005737F6 /* Courses.xcdatamodel */,
+			);
+			currentVersion = D03DDC8A2098F170005737F6 /* Courses.xcdatamodel */;
+			path = Courses.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D0D324BF208DEDC80010E5A2 /* Project object */;
 }

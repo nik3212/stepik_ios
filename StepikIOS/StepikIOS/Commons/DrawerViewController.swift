@@ -9,9 +9,9 @@ enum ScreenType {
     var title: String {
         switch self {
         case .bookmarks:
-            return "Закладки"
+            return "Избранное"
         case .search:
-            return "Поиск"
+            return "Курсы"
         }
     }
 }
