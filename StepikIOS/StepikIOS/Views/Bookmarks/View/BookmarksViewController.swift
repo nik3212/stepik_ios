@@ -35,6 +35,7 @@ extension BookmarksViewController: BookmarksViewInput {
 
     func remove(index: Int) {
         viewModel.remove(index: index)
+        tableView.deleteRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
 }
 
@@ -54,6 +55,10 @@ extension BookmarksViewController: SearchTableViewCellDelegate {
     func didBookmarksTap(_ cell: SearchTableViewCell) {
         if let indexPath = tableView.indexPath(for: cell) {
             output.remove(course: indexPath.row)
+            
+            if indexPath.row == 0 {
+                tableView.reloadData()
+            }
         }
     }
 }
