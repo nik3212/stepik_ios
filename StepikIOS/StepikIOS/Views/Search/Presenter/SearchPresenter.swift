@@ -16,8 +16,8 @@ class SearchPresenter: SearchViewOutput {
         }
     }
     
-    func update(course index: Int) {
-        view.updateStoredItem(by: index)
+    func update(course index: Int, icon: UIImage) {
+        view.updateStoredItem(by: index, with: icon)
     }
     
     private func setupData(_ pagedCourse: PagedCourses) {

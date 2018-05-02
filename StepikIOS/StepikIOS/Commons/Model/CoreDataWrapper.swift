@@ -9,7 +9,7 @@ class CoreDataWrapper {
         self.managedContext = managedContext
     }
     
-    func save(course: PagedCourses.Course) {
+    func save(course: PagedCourses.Course, icon: UIImage) {
         if isExist(id: course.id) { return }
         
         let entityDescription = NSEntityDescription.entity(forEntityName: "Course", in: managedContext)
@@ -17,6 +17,10 @@ class CoreDataWrapper {
         
         managedObject.setValue(course.id, forKey: "id")
         managedObject.setValue(course.courseTitle, forKey: "name")
+        
+        guard let imageData = UIImageJPEGRepresentation(icon, 1) else { return }
+        
+        managedObject.setValue(imageData, forKey: "icon")
         
         do {
             try managedContext.save()

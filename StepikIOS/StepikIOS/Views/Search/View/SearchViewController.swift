@@ -61,11 +61,11 @@ extension SearchViewController: SearchViewInput {
         self.viewModel.append(data)
     }
     
-    func updateStoredItem(by index: Int) {
+    func updateStoredItem(by index: Int, with icon: UIImage) {
         if viewModel.isExist(index: index) {
             viewModel.remove(index: index)
         } else {
-            viewModel.save(index: index)
+            viewModel.save(index: index, icon: icon)
         }
     }
     
@@ -89,7 +89,7 @@ extension SearchViewController: UITableViewDataSource {
 extension SearchViewController: SearchTableViewCellDelegate {
     func didBookmarksTap(_ cell: SearchTableViewCell) {
         if let indexPath = tableView.indexPath(for: cell) {
-            output.update(course: indexPath.row)
+            output.update(course: indexPath.row, icon: cell.courseImageView.image!)
         }
     }
 }

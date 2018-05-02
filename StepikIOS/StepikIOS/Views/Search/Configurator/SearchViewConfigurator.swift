@@ -17,7 +17,6 @@ class SearchViewConfigurator {
 
         let viewModel = SearchCellModel()
         
-        //viewModel.managedContext = coreDataStack.managedContext
         viewModel.coreDataWrapper = CoreDataWrapper(managedContext: coreDataStack.managedContext)
         
         viewController.output = presenter

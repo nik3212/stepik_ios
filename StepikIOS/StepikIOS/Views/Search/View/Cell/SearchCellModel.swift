@@ -38,8 +38,8 @@ class SearchCellModel {
         return cell
     }
     
-    func save(index: Int) {
-        coreDataWrapper.save(course: courses[index])
+    func save(index: Int, icon: UIImage) {
+        coreDataWrapper.save(course: courses[index], icon: icon)
     }
     
     func load() -> [Course] {

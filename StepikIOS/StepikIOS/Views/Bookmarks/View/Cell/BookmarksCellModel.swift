@@ -12,7 +12,11 @@ class BookmarksCellModel {
         let courses = coreDataWrapper.load()
         
         cell.nameCourseLabel.text = courses[indexPath.row].name
-        //loadCourseImage(url: courses[indexPath.row].courseCover, to: cell)
+        
+        if let data = courses[indexPath.row].icon,
+            let image = UIImage(data: data) {
+            cell.courseImageView.image = image
+        }
         
         cell.bookmarkButton.isChecked = coreDataWrapper.isExist(id: Int(courses[indexPath.row].id))
         
