@@ -17,8 +17,11 @@ public class CourseLoader: CourseLoaderProtocol {
     public init() {}
     
     public func loadCourses(page: Int, _ completion: @escaping (Result<PagedCourses>)->()) {
-        courseRequest = Alamofire.request(Constants.searchUrl + String(page))
-        
+        #if TESTS
+        #else
+            courseRequest = Alamofire.request(Constants.searchUrl + String(page))
+        #endif
+ 
         courseRequest.response(queue: nil) { (response) in
             if let data = response.data,
                 let courses = try? JSONDecoder().decode(PagedCourses.self, from: data) {

@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */; };
 		D008584220936D21005AEC03 /* Panton ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584120936D21005AEC03 /* Panton ExtraLight.otf */; };
 		D008584420936D2C005AEC03 /* Panton Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584320936D2B005AEC03 /* Panton Bold.otf */; };
 		D008584620936D40005AEC03 /* Panton Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584520936D40005AEC03 /* Panton Light.otf */; };
 		D008584820936D50005AEC03 /* Panton.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584720936D4F005AEC03 /* Panton.otf */; };
-		D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; };
-		D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01630DE208E360200839D2E /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D03DDC8B2098F170005737F6 /* Courses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D03DDC892098F170005737F6 /* Courses.xcdatamodeld */; };
 		D08408FE2097B836003CB30D /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08408FD2097B836003CB30D /* BookmarksViewController.swift */; };
 		D0B55E342099B92F0006B121 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E332099B92F0006B121 /* RadioButton.swift */; };
@@ -24,6 +21,16 @@
 		D0B55E412099D91A0006B121 /* BookmarksViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E402099D91A0006B121 /* BookmarksViewControllerConfigurator.swift */; };
 		D0B55E432099D9530006B121 /* BookmarksViewInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E422099D9530006B121 /* BookmarksViewInitializer.swift */; };
 		D0B55E4B2099E8370006B121 /* BookmarksCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E4A2099E8370006B121 /* BookmarksCellModel.swift */; };
+		D0B80F36209CAA91009677F0 /* KRPullLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E4F2099F6C40006B121 /* KRPullLoader.framework */; };
+		D0B80F37209CAA91009677F0 /* KRPullLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E4F2099F6C40006B121 /* KRPullLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0B80F4B209CAC21009677F0 /* EmptyDataSet_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F48209CABA9009677F0 /* EmptyDataSet_Swift.framework */; };
+		D0B80F4C209CAC21009677F0 /* EmptyDataSet_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F48209CABA9009677F0 /* EmptyDataSet_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0B80F4D209CAC39009677F0 /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F49209CABA9009677F0 /* ExternalWorkers.framework */; };
+		D0B80F4E209CAC39009677F0 /* ExternalWorkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F49209CABA9009677F0 /* ExternalWorkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0B80F4F209CAC4B009677F0 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F4A209CABA9009677F0 /* CoreDataStack.framework */; };
+		D0B80F50209CAC4B009677F0 /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F4A209CABA9009677F0 /* CoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0B80F51209CAC5E009677F0 /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F47209CABA8009677F0 /* StepikCore.framework */; };
+		D0B80F52209CAC5E009677F0 /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F47209CABA8009677F0 /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -76,7 +83,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D01630EC208E3C5200839D2E /* StepikCore.framework in Embed Frameworks */,
+				D0B80F50209CAC4B009677F0 /* CoreDataStack.framework in Embed Frameworks */,
+				D0B80F4C209CAC21009677F0 /* EmptyDataSet_Swift.framework in Embed Frameworks */,
+				D0B80F37209CAA91009677F0 /* KRPullLoader.framework in Embed Frameworks */,
+				D0B80F52209CAC5E009677F0 /* StepikCore.framework in Embed Frameworks */,
+				D0B80F4E209CAC39009677F0 /* ExternalWorkers.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,12 +97,10 @@
 /* Begin PBXFileReference section */
 		40B580C23E243BE27E8E00AF /* Pods-StepikIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepikIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5611CC105BD7AA69D2CB685D /* Pods-StepikIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepikIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS.release.xcconfig"; sourceTree = "<group>"; };
-		5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepikIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D008584120936D21005AEC03 /* Panton ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton ExtraLight.otf"; sourceTree = "<group>"; };
 		D008584320936D2B005AEC03 /* Panton Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton Bold.otf"; sourceTree = "<group>"; };
 		D008584520936D40005AEC03 /* Panton Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton Light.otf"; sourceTree = "<group>"; };
 		D008584720936D4F005AEC03 /* Panton.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panton.otf; sourceTree = "<group>"; };
-		D01630DE208E360200839D2E /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03DDC8A2098F170005737F6 /* Courses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Courses.xcdatamodel; sourceTree = "<group>"; };
 		D08408FD2097B836003CB30D /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
 		D0B55E332099B92F0006B121 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
@@ -102,10 +111,11 @@
 		D0B55E402099D91A0006B121 /* BookmarksViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewControllerConfigurator.swift; sourceTree = "<group>"; };
 		D0B55E422099D9530006B121 /* BookmarksViewInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewInitializer.swift; sourceTree = "<group>"; };
 		D0B55E4A2099E8370006B121 /* BookmarksCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksCellModel.swift; sourceTree = "<group>"; };
-		D0B55E4C2099F6C40006B121 /* EmptyDataSet_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EmptyDataSet_Swift.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphoneos/EmptyDataSet-Swift/EmptyDataSet_Swift.framework"; sourceTree = "<group>"; };
-		D0B55E4D2099F6C40006B121 /* ExternalWorkers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalWorkers.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphoneos/ExternalWorkers.framework"; sourceTree = "<group>"; };
-		D0B55E4E2099F6C40006B121 /* CoreDataStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreDataStack.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphoneos/CoreDataStack.framework"; sourceTree = "<group>"; };
 		D0B55E4F2099F6C40006B121 /* KRPullLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KRPullLoader.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/KRPullLoader/KRPullLoader.framework"; sourceTree = "<group>"; };
+		D0B80F47209CABA8009677F0 /* StepikCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StepikCore.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/StepikCore.framework"; sourceTree = "<group>"; };
+		D0B80F48209CABA9009677F0 /* EmptyDataSet_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EmptyDataSet_Swift.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework"; sourceTree = "<group>"; };
+		D0B80F49209CABA9009677F0 /* ExternalWorkers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalWorkers.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/ExternalWorkers.framework"; sourceTree = "<group>"; };
+		D0B80F4A209CABA9009677F0 /* CoreDataStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreDataStack.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/CoreDataStack.framework"; sourceTree = "<group>"; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -145,8 +155,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D01630DF208E360200839D2E /* StepikCore.framework in Frameworks */,
-				278F38DABCAC9E848303EC0B /* Pods_StepikIOS.framework in Frameworks */,
+				D0B80F4F209CAC4B009677F0 /* CoreDataStack.framework in Frameworks */,
+				D0B80F4B209CAC21009677F0 /* EmptyDataSet_Swift.framework in Frameworks */,
+				D0B80F36209CAA91009677F0 /* KRPullLoader.framework in Frameworks */,
+				D0B80F51209CAC5E009677F0 /* StepikCore.framework in Frameworks */,
+				D0B80F4D209CAC39009677F0 /* ExternalWorkers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +280,11 @@
 		D0B56256208E29D60066578C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0B55E4C2099F6C40006B121 /* EmptyDataSet_Swift.framework */,
-				D0B55E4E2099F6C40006B121 /* CoreDataStack.framework */,
+				D0B80F48209CABA9009677F0 /* EmptyDataSet_Swift.framework */,
+				D0B80F49209CABA9009677F0 /* ExternalWorkers.framework */,
+				D0B80F4A209CABA9009677F0 /* CoreDataStack.framework */,
+				D0B80F47209CABA8009677F0 /* StepikCore.framework */,
 				D0B55E4F2099F6C40006B121 /* KRPullLoader.framework */,
-				D0B55E4D2099F6C40006B121 /* ExternalWorkers.framework */,
-				D01630DE208E360200839D2E /* StepikCore.framework */,
-				5AB14BA704817557DF9A56D5 /* Pods_StepikIOS.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
