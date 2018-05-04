@@ -12,6 +12,14 @@
 		D008584620936D40005AEC03 /* Panton Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584520936D40005AEC03 /* Panton Light.otf */; };
 		D008584820936D50005AEC03 /* Panton.otf in Resources */ = {isa = PBXBuildFile; fileRef = D008584720936D4F005AEC03 /* Panton.otf */; };
 		D03DDC8B2098F170005737F6 /* Courses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D03DDC892098F170005737F6 /* Courses.xcdatamodeld */; };
+		D064E0D3209CC16F00EA8E86 /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D064E0D2209CC16F00EA8E86 /* StepikCore.framework */; };
+		D064E0D4209CC16F00EA8E86 /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D064E0D2209CC16F00EA8E86 /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D064E0D6209CC16F00EA8E86 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D064E0D5209CC16F00EA8E86 /* CoreDataStack.framework */; };
+		D064E0D7209CC16F00EA8E86 /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D064E0D5209CC16F00EA8E86 /* CoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D064E0D9209CC16F00EA8E86 /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D064E0D8209CC16F00EA8E86 /* ExternalWorkers.framework */; };
+		D064E0DA209CC16F00EA8E86 /* ExternalWorkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D064E0D8209CC16F00EA8E86 /* ExternalWorkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D064E0DD209CC1C300EA8E86 /* EmptyDataSet_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D064E0DC209CC1C300EA8E86 /* EmptyDataSet_Swift.framework */; };
+		D064E0DF209CC1C300EA8E86 /* KRPullLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D064E0DE209CC1C300EA8E86 /* KRPullLoader.framework */; };
 		D08408FE2097B836003CB30D /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08408FD2097B836003CB30D /* BookmarksViewController.swift */; };
 		D0B55E342099B92F0006B121 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E332099B92F0006B121 /* RadioButton.swift */; };
 		D0B55E362099CB980006B121 /* CoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E352099CB980006B121 /* CoreDataWrapper.swift */; };
@@ -21,16 +29,6 @@
 		D0B55E412099D91A0006B121 /* BookmarksViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E402099D91A0006B121 /* BookmarksViewControllerConfigurator.swift */; };
 		D0B55E432099D9530006B121 /* BookmarksViewInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E422099D9530006B121 /* BookmarksViewInitializer.swift */; };
 		D0B55E4B2099E8370006B121 /* BookmarksCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B55E4A2099E8370006B121 /* BookmarksCellModel.swift */; };
-		D0B80F36209CAA91009677F0 /* KRPullLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E4F2099F6C40006B121 /* KRPullLoader.framework */; };
-		D0B80F37209CAA91009677F0 /* KRPullLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B55E4F2099F6C40006B121 /* KRPullLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D0B80F4B209CAC21009677F0 /* EmptyDataSet_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F48209CABA9009677F0 /* EmptyDataSet_Swift.framework */; };
-		D0B80F4C209CAC21009677F0 /* EmptyDataSet_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F48209CABA9009677F0 /* EmptyDataSet_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D0B80F4D209CAC39009677F0 /* ExternalWorkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F49209CABA9009677F0 /* ExternalWorkers.framework */; };
-		D0B80F4E209CAC39009677F0 /* ExternalWorkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F49209CABA9009677F0 /* ExternalWorkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D0B80F4F209CAC4B009677F0 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F4A209CABA9009677F0 /* CoreDataStack.framework */; };
-		D0B80F50209CAC4B009677F0 /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F4A209CABA9009677F0 /* CoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D0B80F51209CAC5E009677F0 /* StepikCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F47209CABA8009677F0 /* StepikCore.framework */; };
-		D0B80F52209CAC5E009677F0 /* StepikCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0B80F47209CABA8009677F0 /* StepikCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0D324CB208DEDC80010E5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */; };
 		D0D324CD208DEDC90010E5A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D324CC208DEDC90010E5A2 /* MainViewController.swift */; };
 		D0D324D0208DEDC90010E5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D324CE208DEDC90010E5A2 /* Main.storyboard */; };
@@ -77,17 +75,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D0B5624D208E28080066578C /* Embed Frameworks */ = {
+		D064E0DB209CC17000EA8E86 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D0B80F50209CAC4B009677F0 /* CoreDataStack.framework in Embed Frameworks */,
-				D0B80F4C209CAC21009677F0 /* EmptyDataSet_Swift.framework in Embed Frameworks */,
-				D0B80F37209CAA91009677F0 /* KRPullLoader.framework in Embed Frameworks */,
-				D0B80F52209CAC5E009677F0 /* StepikCore.framework in Embed Frameworks */,
-				D0B80F4E209CAC39009677F0 /* ExternalWorkers.framework in Embed Frameworks */,
+				D064E0D7209CC16F00EA8E86 /* CoreDataStack.framework in Embed Frameworks */,
+				D064E0DA209CC16F00EA8E86 /* ExternalWorkers.framework in Embed Frameworks */,
+				D064E0D4209CC16F00EA8E86 /* StepikCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +98,11 @@
 		D008584520936D40005AEC03 /* Panton Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton Light.otf"; sourceTree = "<group>"; };
 		D008584720936D4F005AEC03 /* Panton.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panton.otf; sourceTree = "<group>"; };
 		D03DDC8A2098F170005737F6 /* Courses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Courses.xcdatamodel; sourceTree = "<group>"; };
+		D064E0D2209CC16F00EA8E86 /* StepikCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StepikCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D064E0D5209CC16F00EA8E86 /* CoreDataStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D064E0D8209CC16F00EA8E86 /* ExternalWorkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExternalWorkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D064E0DC209CC1C300EA8E86 /* EmptyDataSet_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EmptyDataSet_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D064E0DE209CC1C300EA8E86 /* KRPullLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KRPullLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08408FD2097B836003CB30D /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
 		D0B55E332099B92F0006B121 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		D0B55E352099CB980006B121 /* CoreDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWrapper.swift; sourceTree = "<group>"; };
@@ -111,11 +112,6 @@
 		D0B55E402099D91A0006B121 /* BookmarksViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewControllerConfigurator.swift; sourceTree = "<group>"; };
 		D0B55E422099D9530006B121 /* BookmarksViewInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewInitializer.swift; sourceTree = "<group>"; };
 		D0B55E4A2099E8370006B121 /* BookmarksCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksCellModel.swift; sourceTree = "<group>"; };
-		D0B55E4F2099F6C40006B121 /* KRPullLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KRPullLoader.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/KRPullLoader/KRPullLoader.framework"; sourceTree = "<group>"; };
-		D0B80F47209CABA8009677F0 /* StepikCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StepikCore.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/StepikCore.framework"; sourceTree = "<group>"; };
-		D0B80F48209CABA9009677F0 /* EmptyDataSet_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EmptyDataSet_Swift.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework"; sourceTree = "<group>"; };
-		D0B80F49209CABA9009677F0 /* ExternalWorkers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalWorkers.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/ExternalWorkers.framework"; sourceTree = "<group>"; };
-		D0B80F4A209CABA9009677F0 /* CoreDataStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreDataStack.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/StepikIOS-ghofwgasymvhnxbjmtdesdkbcdal/Build/Products/Release-iphonesimulator/CoreDataStack.framework"; sourceTree = "<group>"; };
 		D0D324C7208DEDC80010E5A2 /* StepikIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D324CA208DEDC80010E5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D324CC208DEDC90010E5A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -155,11 +151,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B80F4F209CAC4B009677F0 /* CoreDataStack.framework in Frameworks */,
-				D0B80F4B209CAC21009677F0 /* EmptyDataSet_Swift.framework in Frameworks */,
-				D0B80F36209CAA91009677F0 /* KRPullLoader.framework in Frameworks */,
-				D0B80F51209CAC5E009677F0 /* StepikCore.framework in Frameworks */,
-				D0B80F4D209CAC39009677F0 /* ExternalWorkers.framework in Frameworks */,
+				D064E0DD209CC1C300EA8E86 /* EmptyDataSet_Swift.framework in Frameworks */,
+				D064E0DF209CC1C300EA8E86 /* KRPullLoader.framework in Frameworks */,
+				D064E0D6209CC16F00EA8E86 /* CoreDataStack.framework in Frameworks */,
+				D064E0D9209CC16F00EA8E86 /* ExternalWorkers.framework in Frameworks */,
+				D064E0D3209CC16F00EA8E86 /* StepikCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +276,8 @@
 		D0B56256208E29D60066578C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0B80F48209CABA9009677F0 /* EmptyDataSet_Swift.framework */,
-				D0B80F49209CABA9009677F0 /* ExternalWorkers.framework */,
-				D0B80F4A209CABA9009677F0 /* CoreDataStack.framework */,
-				D0B80F47209CABA8009677F0 /* StepikCore.framework */,
-				D0B55E4F2099F6C40006B121 /* KRPullLoader.framework */,
+				D064E0DC209CC1C300EA8E86 /* EmptyDataSet_Swift.framework */,
+				D064E0DE209CC1C300EA8E86 /* KRPullLoader.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -292,6 +285,9 @@
 		D0D324BE208DEDC80010E5A2 = {
 			isa = PBXGroup;
 			children = (
+				D064E0D8209CC16F00EA8E86 /* ExternalWorkers.framework */,
+				D064E0D5209CC16F00EA8E86 /* CoreDataStack.framework */,
+				D064E0D2209CC16F00EA8E86 /* StepikCore.framework */,
 				D008583820936B13005AEC03 /* Resources */,
 				D0B56256208E29D60066578C /* Frameworks */,
 				D0D324C9208DEDC80010E5A2 /* StepikIOS */,
@@ -466,8 +462,8 @@
 				D0D324C3208DEDC80010E5A2 /* Sources */,
 				D0D324C4208DEDC80010E5A2 /* Frameworks */,
 				D0D324C5208DEDC80010E5A2 /* Resources */,
-				D0B5624D208E28080066578C /* Embed Frameworks */,
 				BD21563874630C0573B72FBA /* [CP] Embed Pods Frameworks */,
+				D064E0DB209CC17000EA8E86 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -618,8 +614,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StepikIOS/Pods-StepikIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/KRPullLoader/KRPullLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/EmptyDataSet_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/KRPullLoader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
