@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:Common"
+      name = "Common">
+      <FileRef
+         location = "group:StepikCore/StepikCore.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:Features"
+      name = "Features">
+      <FileRef
+         location = "group:CoreDataStack/CoreDataStack.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ExternalWorkers/ExternalWorkers.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "container:StepikIOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
