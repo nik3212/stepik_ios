@@ -3,7 +3,7 @@
 ![License](https://user-images.githubusercontent.com/17319991/40991144-80ec251a-68fb-11e8-9b4e-dd076dcd03db.png)
 ![Platform iOS](https://user-images.githubusercontent.com/17319991/40991199-a92fa8d0-68fb-11e8-8bf2-839bd17f7dac.png)
 
-## Getting Started
+## Description
 The repository contains implementation of the JetBrains's Summer 2018 Intership project with the following functionality:
 
 * Search for courses on [Stepik](https://stepik.org) with the use of [API](https://stepik.org/api/docs).
